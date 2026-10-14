@@ -199,3 +199,39 @@ Current baseline and separately rendered O06 draft are not shown to be incorrect
 ### Execution limits
 
 No Vitest/build/browser test run is claimed. package.json exposes vitest run, but tests were not located or executed in this pass. No app files, test files, research data or Lovable build state were modified. Person 2 owns minimal fixes; exact test-file ownership remains to be agreed before QA adds app tests.
+
+
+## Codex executed tests and local browser — 2026-10-14, approximately 12:40–12:45 Stockholm
+
+Pinned local clone: hackathon-mdd d97f7c1aa2a0c9c82d1894aa612c9f6ce726eb1c. Production/source files untouched. This tests a local copy, not the deployed Lovable preview.
+
+### Executed
+
+- npm test: PASS, 2 files / 10 tests, Vitest 4.1.11, 12:42:18 Stockholm.
+- npm run build: PASS, client, SSR and Cloudflare-module output. No deployment.
+- Dependency caveat: installed with npm install --ignore-scripts --package-lock=false because Bun was unavailable. Repository has bun.lock; this was NOT a frozen Bun-lockfile reproduction. Lockfile and tracked source were not edited.
+- Additional direct executions of the actual research.ts module (Node TypeScript erasure; JSON import substituted with the identical file content): PASS baseline order, explicit inactive/draft exclusion, score ties, actual draft O06 exclusion and directObs candidate exclusion.
+- QA-06 reproduced: a new ranked record with missing review status is accepted; an O06 copy with top-level gates removed/promoted is accepted while P06 remains draft. This is a negative test of the import gate, not a claim that current baseline is contaminated.
+- Existing O06 test only retains active:false/reviewStatus:draft while changing links/rank. It therefore does not prove supporting-record eligibility.
+
+### Local in-app-browser observations at http://127.0.0.1:4173/
+
+| Check | Result / precise scope |
+|---|---|
+| Initial load | PASS: app renders, PLAN selected |
+| All five stages | PASS: clicked PLAN/PREPARE/MOVE/OPERATE/FINISH; corresponding tasks, equipment, dependencies and gaps render |
+| PLAN → P01 → E03a | PASS: A/B/C panels and E03a locator, year 2014, actor/task and limitations visible |
+| E03 source link | Correct href visible in browser accessibility tree; external destination NOT opened in this local pass |
+| P01 → O01 | PASS: clicked hypothesis link; URL becomes /#O01 |
+| Baseline comparison | PASS observed order O01/O02/O03/O05/O04, sums 11/10/10/8/8 |
+| SG13 candidate search | FAIL QA-05: E10a appears as generic Observation without candidate label in search hit |
+| Escape closes panel | FAIL QA-03: Escape leaves selected E03a and P01 panels unchanged |
+| No-result query xyzzy | PASS: explanatory empty result; app remains available |
+| Reset from FINISH with query | PASS: query cleared, PLAN selected and empty detail restored |
+| Deployed preview, reload, full keyboard sequence, exact viewports/zoom, source access and timed demo | NOT TESTED in this pass |
+
+No browser measurements at prescribed viewport/zoom sizes are claimed. No production changes, new app test files, build requests or deploys were made.
+
+### Immediate handoff to Person 2
+
+Fix QA-05 candidate search first. Before approving any merged import, fix QA-06 support eligibility and legacy-baseline scoping. Then resolve QA-01 family counters, QA-02 complete automation disclosure and QA-03 close/focus return. Reuse working ranking and baseline behavior. Request QA rerun on the exact new commit; do not interpret 10 passing tests as coverage of the negative cases above.
