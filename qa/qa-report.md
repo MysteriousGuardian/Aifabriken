@@ -338,3 +338,18 @@ Remaining implementation acceptance:
 Do these in one focused UI pass, preserve baseline/draft status and the working full gate. Return exact app commit and accessible preview for retest. QA does not own production fixes.
 
 Still pending: deployed browser accessibility, 125% zoom, full keyboard-only sequence and live spoken three-minute rehearsal. Do not equate a successful build with those checks.
+
+
+## Codex trace and keyboard retest — 2026-10-14 12:57–13:00 Stockholm
+
+Pinned app snapshot 1b11f9c0ee03d6834a53344af384272944261f67. Source diff adds clickable opportunity-to-observation traces and missing-reference display; full eligibility gate remains in use. npm test PASS 10/10 at 12:57:21.
+
+Local browser:
+- Table now visibly shows opportunity → pain-point ID → observation buttons → source IDs.
+- Enter on O01 table trace E03a opens correct E03a details and focuses ASIDE labelled Evidence panel.
+- Tab from that panel focuses the source anchor with exact URMCA URL.
+- Escape leaves E03a details open: QA-03 still open.
+- Fresh reload renders PLAN again; first Tab focuses search.
+- No full keyboard-only tour, external PDF activation, 125% zoom or live spoken rehearsal claimed.
+
+Current tested baseline has no observed P0/P1 blocker in the exercised paths. Remaining P2 implementation acceptance: source-family counts, automated/curated disclosure, close/focus-return, narrow navigation cells. Person 2 owns these fixes. Ready-to-send acceptance packet is qa/builder-fix-handoff.md. No production files changed by QA.
