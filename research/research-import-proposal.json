@@ -1,0 +1,313 @@
+{
+  "proposalVersion": 1,
+  "status": "pending team integration review; do not overwrite app dataset",
+  "baselineBlobSha": "3212a9159e69725d56aa74770dbec80ee5fd0082",
+  "preserveExistingIds": true,
+  "reservedSourceIds": [
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17"
+  ],
+  "sourcesToAdd": [
+    {
+      "id": "E18",
+      "title": "Esch: Best Practices for Making Quality Soff-Cut Joint Cuts",
+      "url": "https://www.eschsupply.com/blog/best-practices-for-making-relief-cuts-in-concrete",
+      "type": "supplier application guidance",
+      "publishedAt": "2024-03-12",
+      "familyId": "Esch",
+      "limitations": "Prescriptive supplier guidance; no field incident or need prevalence; possibly shared manufacturer checklist content.",
+      "inspectedAt": "2026-10-14",
+      "accessStatus": "inspected-page-text",
+      "inspectionProvenance": "Codex web source inspection",
+      "integrationReviewStatus": "draft"
+    },
+    {
+      "id": "E19",
+      "title": "Husqvarna Experience Center: Soff-Cut Saws User Guide",
+      "url": "https://husqvarnacptraining.com/soff-cut-saws/",
+      "type": "manufacturer-associated training resource",
+      "publishedAt": null,
+      "familyId": "Husqvarna-userguides",
+      "limitations": "Page text and support paths inspected; videos/transcripts not viewed; effectiveness untested; distinct from previously unavailable E17 URL.",
+      "inspectedAt": "2026-10-14",
+      "accessStatus": "inspected-page-text",
+      "inspectionProvenance": "Codex web source inspection",
+      "integrationReviewStatus": "draft"
+    }
+  ],
+  "observationsToAdd": [
+    {
+      "id": "E01e",
+      "sourceId": "E01",
+      "locator": "Printed p.23, troubleshooting: Soff-Cut 150 chipping/spalling/ravelling",
+      "paraphrase": "The manual already provides troubleshooting checks spanning blade, skid, assembly, machine and surface conditions.",
+      "actor": "Professional operator/technician",
+      "task": "Troubleshoot cut quality",
+      "tools": [
+        "saw",
+        "blade",
+        "skid"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need."
+    },
+    {
+      "id": "E01f",
+      "sourceId": "E01",
+      "locator": "Printed p.24, troubleshooting: Soff-Cut 150 pulling sideways",
+      "paraphrase": "The manual links sideways pulling to pointer alignment and skid condition checks.",
+      "actor": "Professional operator/technician",
+      "task": "Find existing line-tracking guidance",
+      "tools": [
+        "pointer",
+        "skid"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "OPERATE"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need."
+    },
+    {
+      "id": "E18a",
+      "sourceId": "E18",
+      "locator": "Best Practices items 1,3,7–10",
+      "paraphrase": "Supplier guidance covers readiness checks, blade/skid alignment and condition, block plungers and intersection protection.",
+      "actor": "Professional operator/technician",
+      "task": "Prepare and use early-entry equipment",
+      "tools": [
+        "saw",
+        "blade",
+        "skid",
+        "joint protectors"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "PLAN",
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need."
+    },
+    {
+      "id": "E18b",
+      "sourceId": "E18",
+      "locator": "Best Practices items 6,9,11",
+      "paraphrase": "Supplier guidance includes transport, daily blade-block cleaning and sweeping direction.",
+      "actor": "Professional operator/technician",
+      "task": "Move and care for equipment",
+      "tools": [
+        "saw",
+        "blade",
+        "blade block"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "MOVE",
+        "FINISH"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need."
+    },
+    {
+      "id": "E19a",
+      "sourceId": "E19",
+      "locator": "Problem Solver; Use the dust-port and product overview videos to troubleshoot the setup path",
+      "paraphrase": "The page offers paths for cutting quality, blade/application questions, upkeep and documentation.",
+      "actor": "Professional operator/technician",
+      "task": "Find existing support",
+      "tools": [
+        "web guide"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE",
+        "FINISH"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need."
+    }
+  ],
+  "painPointsToUpsert": [
+    {
+      "id": "P06",
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "observationIds": [
+        "E01e",
+        "E01f",
+        "E18a",
+        "E19a"
+      ],
+      "interpretation": "Operators may need easier contextual access to existing cut-quality troubleshooting; no observed usability gap yet.",
+      "confidence": "low",
+      "unknowns": [
+        "Whether existing guidance is difficult to find/use",
+        "Whether this aid adds value beyond manuals and training",
+        "Frequency of real incidents"
+      ],
+      "prevalence": "unknown",
+      "reviewStatus": "draft"
+    }
+  ],
+  "opportunitiesToUpsert": [
+    {
+      "id": "O06",
+      "rank": 3,
+      "title": "Contextual access to existing cut-quality troubleshooting",
+      "painPointIds": [
+        "P06",
+        "P02"
+      ],
+      "hypothesis": "A workflow-linked navigator to existing instructions may help if operators show a genuine access/application gap.",
+      "responseType": "service/process",
+      "status": "untested hypothesis; existing troubleshooting verified; novelty unestablished",
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 3,
+        "relevance": 3
+      },
+      "active": true,
+      "reviewStatus": "draft",
+      "existingAlternatives": [
+        "E01e troubleshooting table",
+        "E01f tracking guidance",
+        "E19a problem-solver support paths"
+      ],
+      "counterevidence": "Existing help addresses cutting-quality problems; the proposition that all help acts only before cutting is rejected.",
+      "unknowns": [
+        "Actual access/application difficulty",
+        "Whether added navigator improves useful decisions"
+      ],
+      "validation": "Compare ordinary manual/guide access with proposed navigator on supervised documented cases with sufficient context; assess retrieved support, correct references, uncertainty and relevance. Photo agreement alone is neither correctness nor demand.",
+      "decisionRule": "Pursue only if observed task difficulty and added useful support warrant further testing; report null/negative results."
+    }
+  ],
+  "opportunityUpdateSuggestions": [
+    {
+      "id": "O01",
+      "rank": 1,
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 3,
+        "relevance": 2
+      },
+      "active": true,
+      "existingAlternatives": [
+        "E01a manual preconditions",
+        "E03a jointing guidance",
+        "E18a readiness guidance"
+      ],
+      "unknowns": [
+        "Actual handoff difficulty not demonstrated"
+      ],
+      "status": "untested hypothesis; constraint documented, need unverified"
+    },
+    {
+      "id": "O03",
+      "rank": 2,
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "active": true,
+      "existingAlternatives": [
+        "E01b extractor instructions",
+        "E07a supplier matching guidance"
+      ],
+      "unknowns": [
+        "Actual fit/performance difficulty unknown"
+      ],
+      "status": "untested hypothesis"
+    },
+    {
+      "id": "O05",
+      "rank": 4,
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "active": true,
+      "existingAlternatives": [
+        "E01d cleaning instructions",
+        "E04a maintenance guidance",
+        "E18b care guidance"
+      ],
+      "unknowns": [
+        "Cleaning/access burden unknown"
+      ],
+      "status": "untested hypothesis"
+    },
+    {
+      "id": "O02",
+      "active": false,
+      "status": "superseded by O06; retain historical ID"
+    },
+    {
+      "id": "O04",
+      "active": false,
+      "status": "backlog; procedural inference only"
+    }
+  ],
+  "rubricUpdate": {
+    "evidence": [
+      "procedural/technical constraint only; unmet need inferred",
+      "direct need evidence with supporting context",
+      "independent corroboration of same customer need"
+    ],
+    "rankPolicy": "Score sum descending; editorial tie-break O01 then O03 then O06; provisional"
+  },
+  "accessLogAdditions": [
+    {
+      "url": "https://www.eschsupply.com/blog/avoid-ravelled-early-entry-concrete-joints",
+      "status": "insufficient-page-text",
+      "usedAsEvidence": false
+    },
+    {
+      "tool": "Strawberry Browser",
+      "status": "not exposed in this session; web tools used"
+    }
+  ],
+  "coordination": "App data owner reviews and imports when Lovable is idle; no app/UI modifications made here."
+}
