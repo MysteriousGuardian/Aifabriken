@@ -304,3 +304,37 @@ Reviewed Person 1's three-minute script in research/research-decision-update.md.
 At 1:00–1:40 E01e exists in the separate draft, not a reviewed OPERATE observation. Say that manual troubleshooting exists and use the actual manual locator if showing the source. At 2:10–2:40 the draft O06 display has no complete validation experiment or alternatives UI. Use Person 1's research handoff for that explanation, or choose baseline O01 and its visible validation experiment for an entirely in-app demo. Existing support is not proof of usability, unmet demand or unique diagnosis.
 
 Live spoken three-minute rehearsal is still NOT TESTED; this is a compatibility review and local click/focus retest. Person 1 owns manuscript changes; QA has not edited research files. Prioritize remaining P1 import gate, then P2 counters/disclosure/close controls; preserve working search and baseline.
+
+
+## Codex gate verification — 2026-10-14 12:54–12:56 Stockholm
+
+App snapshot 8158fec0dcfe5674689dba88a92c7d4e8afab7ed. GitHub origin/main and Lovable latest_commit_sha both reported this SHA at inspection; this is metadata agreement, not deployed-browser verification.
+
+**QA-06 CLOSED for this snapshot's actual reviewed-table path.** The UI now calls rankEligibleOpportunities, which validates every linked pain point, observation and source before applying the existing rank sort. Baseline fallback is scoped by known IDs. The older rankReviewedOpportunities helper remains permissive; app integration must continue using the full gate.
+
+Eight executed direct-module assertions passed:
+1. Baseline order O01/O02/O03/O05/O04.
+2. Draft P06 rejected even with additional P02 path.
+3. Reviewed P06 with draft observations rejected.
+4. Reviewed observations with draft new sources rejected.
+5. Fully reviewed support admitted.
+6. New opportunity with missing review status rejected.
+7. Missing observation rejected.
+8. Candidate observation rejected.
+
+These scenarios modified only in-memory copies in a separate Node process, not files or actual research statuses. Existing npm test: 10/10 PASS at 12:55:07. npm run build: PASS. git status clean afterward. Dependency-install caveat from earlier applies.
+
+### Current minimum fix list for Person 2
+
+No open P0 or reproduced P1 remains in the exercised baseline paths. QA-05 candidate search and QA-06 support gate are closed at their tested snapshots; keep them in the next regression pass.
+
+Remaining implementation acceptance:
+- QA-01: show eligible observation count and deduplicated family count; P04/P05 must show 2 observations / 1 family.
+- QA-02: visibly explain automated loading/search/traversal/arithmetic versus curated selection/extraction/interpretation/inputs; discovery is not implemented.
+- QA-03: labelled panel close and Escape handling with focus return to opener.
+- Narrow-screen P2: avoid PREPARE/OPERATE text exceeding the 390px navigation cells.
+- QA-04 exact header wording is cosmetic; resolve criterion or copy consistently.
+
+Do these in one focused UI pass, preserve baseline/draft status and the working full gate. Return exact app commit and accessible preview for retest. QA does not own production fixes.
+
+Still pending: deployed browser accessibility, 125% zoom, full keyboard-only sequence and live spoken three-minute rehearsal. Do not equate a successful build with those checks.
