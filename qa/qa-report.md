@@ -353,3 +353,24 @@ Local browser:
 - No full keyboard-only tour, external PDF activation, 125% zoom or live spoken rehearsal claimed.
 
 Current tested baseline has no observed P0/P1 blocker in the exercised paths. Remaining P2 implementation acceptance: source-family counts, automated/curated disclosure, close/focus-return, narrow navigation cells. Person 2 owns these fixes. Ready-to-send acceptance packet is qa/builder-fix-handoff.md. No production files changed by QA.
+
+
+## Codex counters and close retest — 2026-10-14 13:04–13:07 Stockholm
+
+App snapshot acd6ab0658e36ebf3e3f5dbf0e3d26b7d30cb464. npm test PASS 10/10 at 13:04:32. Source introduces evidenceCounts and panel close/status handling.
+
+Local browser verified:
+- Enter on O01 trace E03a → evidence opens; Escape closes → focus returns to E03a opener.
+- Space opens P04; Close activated with Return closes pain → focus returns to P04.
+- P04 and P05 display Reviewed observations: 2 / Source families: 1.
+- Status message updates for opened/closed panels.
+
+QA-03 is closed for these exercised paths; search opener/removal fallback and every control remain untested. QA-01 baseline display requirement passes. QA-02 disclosure detail and narrow navigation remain unchanged/open.
+
+### QA-07 · P1 before mixed-status import · appfel — counters ignore source review eligibility
+
+Owner Person 2. evidenceCounts filters observation.reviewStatus and candidateOnly, but ignores source integrationReviewStatus and even counts a missing source as its own family. In an isolated in-memory execution, setting E01/E04 source integration status to draft leaves P04 count at 2/1 while isPainPointSupportEligible(P04) returns false. Files and actual data were untouched.
+
+Expected: reviewed support counters require an existing review-eligible source; missing/draft/ineligible sources must not inflate counts. Apply the same source-review semantics as the full gate, deduplicate observation IDs before counting, preserve valid baseline family grouping. This does not corrupt current baseline, but must be fixed before mixed-status import. Add regressions for draft source, missing source and duplicate observation reference.
+
+QA demo runbook added as qa/demo-runbook.md: version-aware click sequence and presentation copy for baseline. It is a rehearsal aid, not a claim of live spoken three-minute timing. Person 1 owns the research narrative; team should reconcile this QA runbook with their script.
