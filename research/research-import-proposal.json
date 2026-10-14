@@ -1,5 +1,5 @@
 {
-  "proposalVersion": 1,
+  "proposalVersion": 2,
   "status": "pending team integration review; do not overwrite app dataset",
   "baselineBlobSha": "3212a9159e69725d56aa74770dbec80ee5fd0082",
   "preserveExistingIds": true,
@@ -188,11 +188,10 @@
   "opportunitiesToUpsert": [
     {
       "id": "O06",
-      "rank": 3,
+      "rank": null,
       "title": "Contextual access to existing cut-quality troubleshooting",
       "painPointIds": [
-        "P06",
-        "P02"
+        "P06"
       ],
       "hypothesis": "A workflow-linked navigator to existing instructions may help if operators show a genuine access/application gap.",
       "responseType": "service/process",
@@ -203,7 +202,7 @@
         "feasibility": 3,
         "relevance": 3
       },
-      "active": true,
+      "active": false,
       "reviewStatus": "draft",
       "existingAlternatives": [
         "E01e troubleshooting table",
@@ -216,7 +215,10 @@
         "Whether added navigator improves useful decisions"
       ],
       "validation": "Compare ordinary manual/guide access with proposed navigator on supervised documented cases with sufficient context; assess retrieved support, correct references, uncertainty and relevance. Photo agreement alone is neither correctness nor demand.",
-      "decisionRule": "Pursue only if observed task difficulty and added useful support warrant further testing; report null/negative results."
+      "decisionRule": "Pursue only if observed task difficulty and added useful support warrant further testing; report null/negative results.",
+      "proposedActive": true,
+      "proposedRank": 3,
+      "evidenceEligibility": "ineligible while draft; P06 and each linked observation/source must pass integration review; generic P02 support is not a substitute"
     }
   ],
   "opportunityUpdateSuggestions": [
@@ -282,12 +284,14 @@
     {
       "id": "O02",
       "active": false,
-      "status": "superseded by O06; retain historical ID"
+      "status": "superseded by O06; retain historical ID",
+      "rank": null
     },
     {
       "id": "O04",
       "active": false,
-      "status": "backlog; procedural inference only"
+      "status": "backlog; procedural inference only",
+      "rank": null
     }
   ],
   "rubricUpdate": {
@@ -309,5 +313,61 @@
       "status": "not exposed in this session; web tools used"
     }
   ],
-  "coordination": "App data owner reviews and imports when Lovable is idle; no app/UI modifications made here."
+  "coordination": "App data owner reviews and imports when Lovable is idle; no app/UI modifications made here.",
+  "reviewGate": {
+    "mode": "explicit team approval; no automatic promotion",
+    "beforeApproval": "Keep baseline reviewed ranking and rubric. Import new records only into a separate drafts view. Do not apply opportunityUpdateSuggestions or rubricUpdate to the reviewed ranking.",
+    "afterApproval": "Apply opportunityUpdateSuggestions and rubricUpdate together. Activate O06/rank 3 only when O06, P06 and every supporting observation and new source is integration-reviewed.",
+    "partialApproval": "Reviewed observations may enter stage lists individually; O06 stays inactive/unranked until its full support chain passes. Never infer readiness from one reachable reviewed observation."
+  },
+  "rankingRules": {
+    "filterBeforeSort": "active !== false AND opportunity reviewStatus is not draft AND relevant pain-point support is review-eligible",
+    "sort": "sum of four score inputs descending, then unique active rank ascending",
+    "inactiveRank": null,
+    "excludeDraftScoresFromReviewedRanking": true,
+    "legacyBaseline": "Missing active/reviewStatus remains eligible only for the known reviewed baseline; imported records require explicit review."
+  },
+  "stageObservationAppendSuggestions": [
+    {
+      "stageId": "PLAN",
+      "observationIds": [
+        "E18a"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "PREPARE",
+      "observationIds": [
+        "E01e",
+        "E18a",
+        "E19a"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "MOVE",
+      "observationIds": [
+        "E18b"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "OPERATE",
+      "observationIds": [
+        "E01e",
+        "E01f",
+        "E18a",
+        "E19a"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "FINISH",
+      "observationIds": [
+        "E18b",
+        "E19a"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    }
+  ]
 }
