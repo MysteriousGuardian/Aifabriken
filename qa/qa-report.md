@@ -235,3 +235,48 @@ No browser measurements at prescribed viewport/zoom sizes are claimed. No produc
 ### Immediate handoff to Person 2
 
 Fix QA-05 candidate search first. Before approving any merged import, fix QA-06 support eligibility and legacy-baseline scoping. Then resolve QA-01 family counters, QA-02 complete automation disclosure and QA-03 close/focus return. Reuse working ranking and baseline behavior. Request QA rerun on the exact new commit; do not interpret 10 passing tests as coverage of the negative cases above.
+
+
+## Strawberry independent source/data pass — 2026-10-14, 12:44–12:46 Stockholm
+
+Research repo: MysteriousGuardian/Aifabriken, main. App snapshot independently read: MysteriousGuardian/hackathon-mdd at d97f7c1aa2a0c9c82d1894aa612c9f6ce726eb1c. Synced branch, deployment equivalence, approved data changes and builder freeze are still NOT VERIFIED. No new browser acceptance pass or live demo rehearsal is claimed in this round. The earlier Strawberry run and Codex additions above remain intact and attributed.
+
+Read current data-review, revised acceptance checklist, baseline, proposal v2, QA response and research decision/demo script. Baseline blob remains 3212a9159e69725d56aa74770dbec80ee5fd0082; proposal blob dd023d56c004674cf9640db715b2cb0c5afa2cb1. These are baseline plus separate draft, not documented approved integration.
+
+### Executed checks (this tester, not inherited claims)
+
+JSON parsed locally; assertions evaluated. The inspected pure research.ts module was type-stripped and executed with identical baseline JSON replacing its import. No app code/data was modified and no Vitest/build/deploy is claimed. Synthetic fixtures existed only in local evaluation.
+
+| Check | Result | Detail |
+|---|---|---|
+| Baseline unique IDs | PASS | 38 records |
+| References/backlinks and candidate exclusion | PASS | [] |
+| Score inputs 1–3 | PASS | [["O01",11],["O02",10],["O03",10],["O05",8],["O04",8]] |
+| P04 family count | PASS | {"observations":2,"families":1} |
+| P05 family count | PASS | {"observations":2,"families":1} |
+| Draft O06 inactive/unranked/P06 only | PASS | ["P06"] |
+| Inactive proposal ranks null | PASS | O02/O04 |
+| Proposed observation backlinks complete | PASS | Conditional append suggestions, not applied |
+| Actual module baseline ranking | PASS | Pinned d97f7c1 module |
+| Actual module excludes inactive/draft before sorting | PASS | Synthetic negative fixtures, no app data changed |
+| QA-06 new record missing review rejected | FAIL | Expected false; actual true |
+| QA-06 promoted O06 with draft support rejected | FAIL | Expected false while P06/support draft; actual true |
+| SG13 candidate excluded from main search predicate | FAIL | Actual matching IDs: E10a |
+
+### Priority handoff and exact retest
+
+- **QA-05, P1, app defect, Person 2:** pinned index.tsx searches all observations and labels hits generically. SG13 predicate returns E10a candidateOnly=true. Expected: exclude candidates from selected-job results or explicitly separate/label candidate hits. Minimum correction: filter candidate-only records out of main search, preserving dedicated candidate view. Exact retest on declared replacement commit: SG13 and PG 540 must not yield ordinary E10a/E09a hits; skid still yields E01b/E02a/E04a/O02/O04; handoff yields P01/O01; xyzzy and Reset still work. **New deployed browser reproduction NOT TESTED**; static predicate reproduced independently.
+- **QA-06, P1 before import, app defect, Person 2:** actual isReviewedEligible accepts NEW_UNREVIEWED with rank and missing status; it also accepts O06 after top-level flags are changed while P06/required support remains draft. Expected: missing-status compatibility only for the known reviewed baseline; imported records require explicit review and every mandatory pain/observation/source support gate. Minimum correction: validate full eligibility before ranking, not a some-path existence warning. Exact retest: missing-status new record excluded; promoted O06 plus any required draft pain/observation/source excluded; a reviewed alternate P02 path cannot bypass P06; fully eligible approved O06 admitted; explicit inactive high-score record excluded before sorting; legacy baseline order unchanged. Current separate O06 draft is correctly excluded; this is an integration gate, not proof of contaminated baseline.
+- **QA-01/QA-02/QA-03:** family counters, detailed automation disclosure and close/focus return remain absent in inspected snapshot. Prior browser defects are NOT RETESTED on any replacement version. Person 2 fixes; QA independently verifies the new declared commit. Prior exact reproduction/minimal corrections above still apply. QA-04 remains low-priority copy mismatch.
+
+### Demo script preflight (static, not timed live rehearsal)
+
+Person 1's research-decision-update.md includes a three-minute script. In baseline mode its 1:00–1:40 troubleshooting segment must use manual/research fallback because proposed E01e is not reviewed app support. The 2:10–2:40 O06 segment must explicitly show a draft proposal/report, not an active reviewed opportunity. Five baseline opportunities and 11/10/10/8/8 remain correct before approval; do not narrate four active 9/9/9/8 as current app state. Script correctly avoids validated-benefit/automatic-discovery claims. External-source fallback: show inspected app paraphrase, locator and limitation if source page blocks; do not bypass blocks or imply fresh verification.
+
+**Live three-minute rehearsal: NOT TESTED** pending confirmed preview/commit and paused editing window. Full keyboard, required viewport/zoom matrix, every active opportunity browser chain and new E07/E08 access remain NOT TESTED in this round.
+
+### Coordination and recommendation
+
+No approved team messaging channel is available; no Person 2 message sent. One forwardable request supplied in chat: confirm apprepo URL, synced branch, review commit, preview, approved data changes and ready-for-QA paused-edit window. No test-file ownership/path agreement exists; no app test file, branch or PR created. No production/research/UI changes, Lovable build/deploy/project/connection action performed.
+
+**Recommendation:** approved import is BLOCKED by QA-06 until fixed and independently retested. Final demo readiness is not certified: frozen deployed-version match and live rehearsal are missing. Baseline remains a possible demo path with stated limitations, not a new acceptance PASS. At 12:44 Stockholm there were about 3h16 to deadline; prioritize candidate search, import eligibility and evidence/demo chain above cosmetics. Proposed freeze remains 15:15; no routine/reminder scheduled.
