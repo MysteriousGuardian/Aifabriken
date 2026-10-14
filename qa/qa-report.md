@@ -111,3 +111,57 @@ All links below were observed in the app and clicked to a new tab; each matches 
 - qa-research-response.md blob: `d252c30093da2391051ec236539ce4396b6aef2e` (corrects #20/#22; baseline before approval must be retained).
 
 Visual evidence of A/B/C separation captured locally as `qa/abc-panel.png` in the Strawberry chat workspace; not committed to the repo. All findings are browser observations, not implementation assertions.
+
+
+## Codex follow-up — 2026-10-14 12:28–12:31 Europe/Stockholm
+
+This section is an independent structural-data check. The Strawberry results above remain attributed to their original tester and bundle. They are not retested or claimed as Codex browser results.
+
+### Blockers and current scope
+
+- No newly verified P0/P1 app defect. Current app behavior cannot be certified in this session.
+- Fresh in-app-browser preview attempt redirected to Lovable login. This is a test-access blocker, not evidence of an app regression or an external research-source failure. Strawberry is not exposed in this tool session. No authentication bypass attempted.
+- App repository, synced branch and builder freeze are not verified. Installed-repository searches for Hackathon and public commit search did not identify a repo. This does not contradict the team's report that sync is connected.
+- Lovable metadata at 12:26 reported ready/agentFinished and commit d97f7c1aa2a0c9c82d1894aa612c9f6ce726eb1c. It is NOT a verified tested deployment commit, and does not identify the earlier Strawberry bundle.
+- Owner of access/version handoff: Person 2. Supply repository, branch, deployed commit/preview correspondence and a paused test window.
+
+### Independently executed structural checks
+
+Inputs: research.json blob 3212a9159e69725d56aa74770dbec80ee5fd0082; proposal v2 blob dd023d56c004674cf9640db715b2cb0c5afa2cb1. JSON parsed and assertions evaluated in Codex tool execution against fetched GitHub contents.
+
+| Check | Result |
+|---|---|
+| Global unique IDs | PASS |
+| All references | PASS |
+| Stage backlinks excluding candidates | PASS |
+| Candidate exclusion | PASS |
+| Four integer scores 1..3 | PASS |
+| P04 one source family | PASS |
+| P05 one source family | PASS |
+| O06 gated, P06 only | PASS |
+| Inactive ranks null | PASS |
+| All proposed observation stage backlinks covered | PASS |
+
+Baseline sums recomputed as O01 11, O02 10, O03 10, O05 8, O04 8. There are 10 sources, 13 observations, 5 stages, 5 pain points and 5 baseline opportunities. Structural PASS does not validate customer need, source meaning, app filtering or runtime rendering.
+
+### QA documentation correction completed
+
+Updated acceptance-checklist.md in commit 95ce56ec6e78c42ffc76965569c2ee201ae25bf8:
+- #20/#22 now distinguish baseline, separate draft and complete approved integration.
+- Four active opportunities are conditional on documented approval and full O06 eligibility.
+- Added concrete regression cases for inactive high scores, draft exclusion, P02 bypass, baseline compatibility, ties, backlinks, date precision and family counts.
+- No research, UI or app data changed.
+
+### Pending verification and ownership
+
+| Work | Result | Owner / next action |
+|---|---|---|
+| App source review and filtering-before-sort | NOT TESTED | Person 2 supplies linked repo/branch; QA reads code |
+| App regression tests | NOT TESTED | Agree exact test-file ownership before adding tests |
+| Earlier QA-01/02/03 fixes | NOT RETESTED | Person 2 fixes/confirms; QA checks same declared version |
+| Latest search/reset/navigation | NOT TESTED | Accessible preview and paused version required |
+| Exact viewport/zoom and keyboard focus return | NOT TESTED | QA performs prescribed layout and keyboard cases |
+| E07/E08 new browser check | NOT TESTED | Prior Strawberry results above remain attributed; no new access claim |
+| Three-minute live demo rehearsal | NOT TESTED | Run Person 1's version-matched script against accessible frozen app |
+
+Recommended retest sequence: fresh load/reload → five stages → PLAN/P01/E03a/source/O01 → ranking and draft exclusion → search/reset → family counters/disclosure → panel close/focus → required viewport/zoom combinations → timed demo. Preserve the existing report's external-source limitations. No deploy, build request or production-code change was made.
