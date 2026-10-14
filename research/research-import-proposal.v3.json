@@ -1,0 +1,1607 @@
+{
+  "proposalVersion": 3,
+  "status": "draft; pending human content review and explicit team import decision; not applied to app",
+  "baselineBlobSha": "3212a9159e69725d56aa74770dbec80ee5fd0082",
+  "preserveExistingIds": true,
+  "reservedSourceIds": [
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17"
+  ],
+  "sourcesToAdd": [
+    {
+      "id": "E18",
+      "title": "Esch: Best Practices for Making Quality Soff-Cut Joint Cuts",
+      "url": "https://www.eschsupply.com/blog/best-practices-for-making-relief-cuts-in-concrete",
+      "type": "supplier application guidance",
+      "publishedAt": "2024-03-12",
+      "familyId": "Esch",
+      "limitations": "Prescriptive supplier guidance; no field incident or need prevalence; possibly shared manufacturer checklist content. Latest web opening exposed insufficient text. Retained paraphrases are prior inspection records, not fresh verification. Approval requires reviewable source content or the exact prior inspection trail.",
+      "inspectedAt": "2026-10-14",
+      "accessStatus": "insufficient-page-text-on-recheck",
+      "inspectionProvenance": "Earlier Codex inspection carried forward; v3 recheck did not expose sufficient text",
+      "integrationReviewStatus": "draft",
+      "priorInspectionStatus": "page text inspection recorded in v2 and research-decision-update.md",
+      "publicationDateProvenance": "2024-03-12 retained from prior inspection record; not reconfirmed in v3"
+    },
+    {
+      "id": "E19",
+      "title": "Husqvarna Experience Center: Soff-Cut Saws User Guide",
+      "url": "https://husqvarnacptraining.com/soff-cut-saws/",
+      "type": "manufacturer-associated training resource",
+      "publishedAt": null,
+      "familyId": "Husqvarna-userguides",
+      "limitations": "Page text and support paths inspected; videos/transcripts not viewed; effectiveness untested; distinct from previously unavailable E17 URL. Support navigation is not model-specific procedural or diagnostic validation. Shared manufacturer affiliation is not independent customer-need corroboration.",
+      "inspectedAt": "2026-10-14",
+      "accessStatus": "inspected-page-text",
+      "inspectionProvenance": "Codex web source inspection",
+      "integrationReviewStatus": "draft",
+      "scope": "Soff-Cut family support navigation; page names 150, 150 PACE and 4000 videos, whose content was not inspected"
+    }
+  ],
+  "observationsToAdd": [
+    {
+      "id": "E01e",
+      "sourceId": "E01",
+      "locator": "Printed p.23, troubleshooting: Soff-Cut 150 chipping/spalling/ravelling",
+      "paraphrase": "The manual already provides troubleshooting checks spanning blade, skid, assembly, machine and surface conditions.",
+      "actor": "Professional operator/technician",
+      "task": "Troubleshoot cut quality",
+      "tools": [
+        "saw",
+        "blade",
+        "skid"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need."
+    },
+    {
+      "id": "E01f",
+      "sourceId": "E01",
+      "locator": "Printed p.24, troubleshooting: Soff-Cut 150 pulling sideways",
+      "paraphrase": "The manual links sideways pulling to pointer alignment and skid condition checks.",
+      "actor": "Professional operator/technician",
+      "task": "Find existing line-tracking guidance",
+      "tools": [
+        "pointer",
+        "skid"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "OPERATE"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need."
+    },
+    {
+      "id": "E18a",
+      "sourceId": "E18",
+      "locator": "Best Practices items 1,3,7–10",
+      "paraphrase": "Supplier guidance covers readiness checks, blade/skid alignment and condition, block plungers and intersection protection.",
+      "actor": "Professional operator/technician",
+      "task": "Prepare and use early-entry equipment",
+      "tools": [
+        "saw",
+        "blade",
+        "skid",
+        "joint protectors"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "PLAN",
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "prior-Codex-inspection-carried-forward; not-reverified-in-v3",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need. Latest opening had insufficient page text; inspect the prior trail or source content before human approval."
+    },
+    {
+      "id": "E18b",
+      "sourceId": "E18",
+      "locator": "Best Practices items 6,9,11",
+      "paraphrase": "Supplier guidance includes transport, daily blade-block cleaning and sweeping direction.",
+      "actor": "Professional operator/technician",
+      "task": "Move and care for equipment",
+      "tools": [
+        "saw",
+        "blade",
+        "blade block"
+      ],
+      "conditions": [
+        "Selected early-entry saw job; source is guidance, not witnessed work"
+      ],
+      "stageIds": [
+        "MOVE",
+        "FINISH"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "prior-Codex-inspection-carried-forward; not-reverified-in-v3",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need. Latest opening had insufficient page text; inspect the prior trail or source content before human approval."
+    },
+    {
+      "id": "E19a",
+      "sourceId": "E19",
+      "locator": "Problem Solver, Steps 1-3; Cutting quality issues; Recommended support path; maintenance and documentation paths",
+      "paraphrase": "The page offers paths for cutting quality, blade/application questions, upkeep and documentation.",
+      "actor": "Professional operator/technician",
+      "task": "Find existing support",
+      "tools": [
+        "web guide"
+      ],
+      "conditions": [
+        "Soff-Cut family support page, not a witnessed 150 job",
+        "Linked video titles/metadata only; no video or transcript inspected"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE",
+        "FINISH"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex",
+      "limitations": "Documents existing instructions/support; does not establish user difficulty, causality or unmet need. An existing topic-based navigator is already available. Multi-model video listings do not establish effectiveness or procedures for the selected gasoline 150.",
+      "scope": "existing-alternative context; not direct evidence of difficulty or correct diagnosis"
+    },
+    {
+      "id": "E01g",
+      "sourceId": "E01",
+      "locator": "Printed pp.20-21, To do a check of the skid plate Soff-Cut 150",
+      "paraphrase": "The manual specifies checks for skid damage, slot wear, burrs, bent side segments and free blade movement, plus replacement with each new blade.",
+      "actor": "Professional operator/technician",
+      "task": "Use existing model-specific skid inspection instructions",
+      "tools": [
+        "blade",
+        "skid plate"
+      ],
+      "conditions": [
+        "Soff-Cut 150; manual instructions, not observed operator behavior"
+      ],
+      "stageIds": [
+        "PREPARE"
+      ],
+      "reviewStatus": "draft",
+      "candidateOnly": false,
+      "inspectionStatus": "source-text-checked-by-Codex-during-planning-pass",
+      "limitations": "Existing checks are documented; difficulty, omissions, usefulness of a redesign and incident frequency remain unmeasured. Same E01 source and family."
+    }
+  ],
+  "painPointsToUpsert": [
+    {
+      "id": "P06",
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "observationIds": [
+        "E01e",
+        "E01f",
+        "E18a",
+        "E19a"
+      ],
+      "interpretation": "Operators may need easier contextual access to existing cut-quality troubleshooting; no observed usability gap yet.",
+      "confidence": "low",
+      "unknowns": [
+        "Whether existing guidance is difficult to find/use",
+        "Whether this aid adds value beyond manuals and training",
+        "Frequency of real incidents",
+        "Added value versus the existing E19 topic-based navigator; photo agreement is not a reference diagnosis"
+      ],
+      "prevalence": "unknown",
+      "reviewStatus": "draft"
+    }
+  ],
+  "opportunitiesToUpsert": [
+    {
+      "id": "O06",
+      "rank": null,
+      "title": "Contextual access to existing cut-quality troubleshooting",
+      "painPointIds": [
+        "P06"
+      ],
+      "hypothesis": "A workflow-linked navigator to existing instructions may help if operators show a genuine access/application gap.",
+      "responseType": "service/process",
+      "status": "untested hypothesis; existing troubleshooting verified; novelty unestablished",
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 3,
+        "relevance": 3
+      },
+      "active": false,
+      "reviewStatus": "draft",
+      "existingAlternatives": [
+        "E01e manual troubleshooting table",
+        "E01f manual tracking checks",
+        "E19a existing topic-based Problem Solver and support paths"
+      ],
+      "counterevidence": "Existing help addresses cutting-quality problems; the proposition that all help acts only before cutting is rejected.",
+      "unknowns": [
+        "Actual access/application difficulty",
+        "Whether added navigator improves useful decisions",
+        "Whether the existing E19 navigator already satisfies the task"
+      ],
+      "validation": "Two or three experienced users compare ordinary manual access, the existing E19 navigator and the proposed workflow navigator on documented cases with sufficient context. Record relevant support retrieved, correct references, uncertainty and task difficulty. Diagnose only against an independently established reference cause; where unavailable, assess retrieval only. Photo agreement alone establishes neither correctness nor demand.",
+      "decisionRule": "Pursue only if observed task difficulty and added useful support warrant further testing; report null/negative results.",
+      "proposedActive": true,
+      "proposedRank": 4,
+      "evidenceEligibility": "ineligible while draft; P06 and each linked observation/source must pass integration review; generic P02 support is not a substitute"
+    }
+  ],
+  "opportunityUpdateSuggestions": [
+    {
+      "id": "O01",
+      "rank": 1,
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 3,
+        "relevance": 2
+      },
+      "active": true,
+      "existingAlternatives": [
+        "E01a manual preconditions",
+        "E03a jointing guidance",
+        "E18a readiness guidance"
+      ],
+      "unknowns": [
+        "Actual handoff difficulty not demonstrated"
+      ],
+      "status": "untested hypothesis; constraint documented, need unverified",
+      "validation": "Test a job card in one supervised scenario with an operator and finishing foreman. Record missing inputs, responsibility, overrides and usefulness; no predicted safe start time. Optional retrospective interviews are separate consented interview records.",
+      "decisionRule": "Continue only if concrete missing information or unclear responsibility is observed and the card adds useful support; retain null or negative outcomes."
+    },
+    {
+      "id": "O02",
+      "rank": 2,
+      "active": true,
+      "title": "Tool-condition inspection and setup support",
+      "painPointIds": [
+        "P02"
+      ],
+      "hypothesis": "Make existing model-specific blade/skid inspections and correct setup easier to perform; test inspection cues before proposing hardware redesign.",
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "responseType": "product",
+      "status": "untested hypothesis; existing checks documented, usability and redesign need unverified",
+      "existingAlternatives": [
+        "E01g existing skid inspection instructions",
+        "E01e troubleshooting checks",
+        "E18a supplier checks, prior inspection not reverified"
+      ],
+      "unknowns": [
+        "Actual inspection difficulty and omission frequency",
+        "Whether existing checks suffice",
+        "Unmet demand for a redesign"
+      ],
+      "validation": "Two or three qualified users compare their ordinary pre-use checks with a nonfunctional inspection-cue mockup on documented condition/setup cases. Record missed checks, comprehension and usability. Any controlled cuts need approved procedures; photos alone cannot establish cause.",
+      "decisionRule": "Continue if observed inspection difficulty and useful improvement justify another test; do not infer demand from a documented maintenance requirement.",
+      "distinctionFromO06": "O02 concerns performing tool inspection/setup; O06 concerns finding and applying existing support. V2's proposed supersession was never applied to baseline."
+    },
+    {
+      "id": "O03",
+      "rank": 3,
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "active": true,
+      "existingAlternatives": [
+        "E01b extractor instructions",
+        "E07a supplier matching guidance"
+      ],
+      "unknowns": [
+        "Actual fit/performance difficulty unknown"
+      ],
+      "status": "untested hypothesis",
+      "validation": "Inspect two configurations with a competent specialist; record actual coupling, hose/filter and maintenance issues. Instrumented comparison is required for performance claims; no compliance or safety-clearance badge.",
+      "decisionRule": "Continue after observed fit/condition difficulty; performance claims require relevant measurements."
+    },
+    {
+      "id": "O05",
+      "rank": 5,
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "active": true,
+      "existingAlternatives": [
+        "E01d cleaning instructions",
+        "E04a maintenance guidance",
+        "E18b care guidance"
+      ],
+      "unknowns": [
+        "Cleaning/access burden unknown"
+      ],
+      "status": "untested hypothesis",
+      "validation": "Observe two post-cut cleanings with consent; record tasks, residue and access issues; compare a nonfunctional service-access mockup. Do not predict time savings or modify a powered machine.",
+      "decisionRule": "Continue if observed access/cleaning burden and mockup usefulness support the concept; report unchanged or negative outcomes."
+    },
+    {
+      "id": "O04",
+      "active": false,
+      "status": "backlog; procedural inference only",
+      "rank": null
+    }
+  ],
+  "rubricUpdate": {
+    "scale": "1-3, equal weight, sum /12; provisional judgment",
+    "evidence": [
+      "procedural/technical constraint only; unmet need inferred",
+      "direct need evidence with supporting context",
+      "independent corroboration of the same customer need"
+    ],
+    "rankPolicy": "Sum descending; editorial tie-break O01 then O02 then O03 then O06; O05 follows at 8. Provisional prioritization, not numerical superiority.",
+    "changeReason": "Technical corroboration establishes constraints, not an unmet need. All five proposed active opportunities have evidence=1 until direct need evidence exists."
+  },
+  "accessLogAdditions": [
+    {
+      "url": "https://www.eschsupply.com/blog/avoid-ravelled-early-entry-concrete-joints",
+      "status": "insufficient-page-text",
+      "usedAsEvidence": false
+    },
+    {
+      "tool": "Strawberry Browser",
+      "status": "not exposed in this session; web tools used"
+    },
+    {
+      "url": "https://www.eschsupply.com/blog/best-practices-for-making-relief-cuts-in-concrete",
+      "status": "insufficient-page-text-on-recheck",
+      "inspectedAt": "2026-10-14",
+      "usedAsEvidence": false,
+      "note": "Retain prior inspection separately; no block bypass attempted."
+    },
+    {
+      "tool": "Browser UI",
+      "status": "No enabled browser surfaces exposed in planning session; no live preview retest claimed",
+      "usedAsEvidence": false
+    },
+    {
+      "sourceId": "E07",
+      "status": "QA reports blocked access in Strawberry; earlier Codex readable result is separate history",
+      "usedAsNewEvidence": false
+    },
+    {
+      "sourceId": "E08",
+      "status": "QA reports PDF rendered in its run; no new legal/compliance validation",
+      "usedAsNewEvidence": false
+    }
+  ],
+  "coordination": "Research owner publishes three new research files only. Person 2 owns app code/data and any import. Person 3 owns QA/tests. No messages, Lovable requests, app writes or deployments are part of this package. Freeze this published proposal; follow-up changes require a new version.",
+  "reviewGate": {
+    "mode": "explicit documented human content review plus team import decision; no automatic promotion",
+    "beforeApproval": "Retain known reviewed baseline ranking/rubric: O01/O02/O03/O05/O04, totals 11/10/10/8/8. New records may appear only in a separate draft view. Proposal visibility and this scope authorization are not approval.",
+    "afterApproval": "Apply the full atomic opportunity batch, rubric, titles, statuses and ranks together. O06 becomes active at rank 4 only after O06, P06, all four required supporting observations and their sources pass eligibility; apply documented review transitions explicitly. Import remains gated on semantic validation that O06 links exactly P06 and P06 retains the required support IDs, QA verification on the chosen implementation, and human/team decisions. The new linked-support code is not a substitute for those checks.",
+    "partialApproval": "Approved observations may enter stage lists individually, including E01g -> P02, without promoting the opportunity batch. O06 remains inactive/rank null until all support passes. If any mandatory support remains draft, do not silently apply the final five-item ranking.",
+    "existingAlternativeReferences": "References to new alternatives such as E18a/E18b must remain explicitly draft until approved; never display them as reviewed support merely because an old opportunity is eligible.",
+    "approvalRecord": "Record approver, timestamp, exact published proposal commit/blob, decision and approved record IDs; evidence review and import acceptance are separate decisions."
+  },
+  "rankingRules": {
+    "filterBeforeSort": "Exclude inactive, draft, unapproved imported records, missing required eligible support or rank null BEFORE score arithmetic/sorting. Check all mandatory P06 paths for O06, not any reachable reviewed path.",
+    "sort": "sum of four components descending, then unique active rank ascending",
+    "inactiveRank": null,
+    "excludeDraftScoresFromReviewedRanking": true,
+    "legacyBaseline": "Missing active/reviewStatus is accepted only for records in the exact known baseline blob; unknown/new records require explicit approval.",
+    "implementationCaveat": "At d97f7c1 the table checked only opportunity flags. At 8158fec it calls rankEligibleOpportunities, checking all declared pain/observation/source records before sorting. Pure execution confirms linked draft exclusion and unknown missing-status rejection. The generic graph still accepts an explicitly reviewed O06 mapped only to P02; enforce the exact proposal relationship and required support membership at import. opportunityChainValid remains an existence check, not evidence meaning or human approval.",
+    "familyCounts": "Count eligible observations and distinct familyId separately. A family count is not independent customer-need evidence or prevalence."
+  },
+  "stageObservationAppendSuggestions": [
+    {
+      "stageId": "PLAN",
+      "observationIds": [
+        "E18a"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "PREPARE",
+      "observationIds": [
+        "E01e",
+        "E18a",
+        "E19a",
+        "E01g"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "MOVE",
+      "observationIds": [
+        "E18b"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "OPERATE",
+      "observationIds": [
+        "E01e",
+        "E01f",
+        "E18a",
+        "E19a"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    },
+    {
+      "stageId": "FINISH",
+      "observationIds": [
+        "E18b",
+        "E19a"
+      ],
+      "applyWhen": "Append each observation only after its review and source integration review pass. Keep drafts in a separate stage draft list; deduplicate."
+    }
+  ],
+  "createdAt": "2026-10-14T12:38:46+02:00",
+  "baselineRepository": "https://github.com/MysteriousGuardian/Aifabriken",
+  "baselineCommit": "6b3813b3ec9fe513e6f7f5092b3b4adf7f75cf65",
+  "originalPlanBaseCommit": "31fed047d2adac98962c8afd13d466c3fa76afeb",
+  "baselineFile": "research/research.json",
+  "baselineContentNote": "Only QA documentation changed from the original plan base through the execution start and this publication base; research baseline and proposal v2 blobs remain unchanged.",
+  "priorProposal": {
+    "version": 2,
+    "repository": "https://github.com/MysteriousGuardian/Aifabriken",
+    "commit": "6b3813b3ec9fe513e6f7f5092b3b4adf7f75cf65",
+    "path": "research/research-import-proposal.json",
+    "blobSha": "dd023d56c004674cf9640db715b2cb0c5afa2cb1",
+    "state": "draft; preserve unchanged; v3 is a separate proposal, not an app import"
+  },
+  "appBaseline": {
+    "repository": "https://github.com/MysteriousGuardian/hackathon-mdd",
+    "branch": "main",
+    "commit": "8158fec0dcfe5674689dba88a92c7d4e8afab7ed",
+    "file": "src/data/research.json",
+    "blobSha": "3212a9159e69725d56aa74770dbec80ee5fd0082",
+    "draftFile": "src/data/research-import-draft.json",
+    "draftBlobSha": "dd023d56c004674cf9640db715b2cb0c5afa2cb1",
+    "inspection": "Latest code and unchanged data blobs inspected read-only; actual pure support module checked with synthetic fixtures; deployed preview not retested.",
+    "testedPreviewBundle": "/assets/index-DO3HIn-1.js",
+    "bundleCommitCorrespondence": "not established; QA bundle and code commit are separate provenance",
+    "previousInspectedCommit": "d97f7c1aa2a0c9c82d1894aa612c9f6ce726eb1c",
+    "qaLocalRetestCommit": "8008474222dbe14ba3883fa33e2151accc38dfb7",
+    "qaLocalRetestScope": "Search/focus and selected viewport checks reported by QA at 12:52-12:55; not the deployed preview or 8158 full support gate.",
+    "qaFullGateRetestCommit": "8158fec0dcfe5674689dba88a92c7d4e8afab7ed",
+    "qaFullGateRetestScope": "QA reports eight direct-module assertions plus tests/build passed and QA-06 closed for the actual reviewed-table path; no deployed-browser equivalence.",
+    "qaLaterTraceRetestCommit": "1b11f9c0ee03d6834a53344af384272944261f67",
+    "qaLaterTraceRetestScope": "Later trace/focus additions reported by QA on a local app; no data import or live spoken rehearsal. Source not independently read in this research pass."
+  },
+  "reviewState": {
+    "sourceInspection": {
+      "performedBy": "Codex",
+      "actorType": "AI",
+      "status": "targeted inspections and carried-forward provenance; see sourceInspectionLog"
+    },
+    "contentReview": {
+      "status": "AI research review completed; human content review not recorded",
+      "humanReviewed": false,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "teamImportDecision": {
+      "status": "pending",
+      "approvedBy": null,
+      "approvedAt": null,
+      "approvedRecordIds": [],
+      "approvedPackageCommit": null
+    },
+    "userScopeDecision": {
+      "status": "five proposed active opportunities authorized in conversation",
+      "opportunityIds": [
+        "O01",
+        "O02",
+        "O03",
+        "O06",
+        "O05"
+      ],
+      "approvesEvidence": false,
+      "approvesAppImport": false
+    },
+    "baselineReviewLabels": "Legacy baseline says reviewed; this package does not establish who performed any historical human review."
+  },
+  "painPointObservationAppendSuggestions": [
+    {
+      "painPointId": "P02",
+      "observationIds": [
+        "E01g"
+      ],
+      "applyWhen": "Append only after E01g content review and source eligibility pass; deduplicate; leave baseline P02 unchanged before approval.",
+      "interpretationBoundary": "Adds documented inspection instructions, not observed customer need; retain medium confidence for technical dependence and unknown unmet demand."
+    }
+  ],
+  "proposedPriority": [
+    {
+      "id": "O01",
+      "rank": 1,
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 3,
+        "relevance": 2
+      }
+    },
+    {
+      "id": "O02",
+      "rank": 2,
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      }
+    },
+    {
+      "id": "O03",
+      "rank": 3,
+      "scores": {
+        "impact": 3,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      }
+    },
+    {
+      "id": "O06",
+      "rank": 4,
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 3,
+        "relevance": 3
+      }
+    },
+    {
+      "id": "O05",
+      "rank": 5,
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      }
+    }
+  ],
+  "atomicOpportunityBatch": {
+    "opportunityIds": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06"
+    ],
+    "applyTogether": [
+      "rubricUpdate",
+      "opportunityUpdateSuggestions",
+      "O06 proposedActive/proposedRank after full eligibility",
+      "rankingRules",
+      "updated opportunity labels and validation text",
+      "O06 reviewStatus and evidenceEligibility transition after documented full support review"
+    ],
+    "expectedApprovedOrder": [
+      "O01",
+      "O02",
+      "O03",
+      "O06",
+      "O05"
+    ],
+    "expectedApprovedTotals": [
+      9,
+      9,
+      9,
+      9,
+      8
+    ],
+    "expectedBacklog": [
+      {
+        "id": "O04",
+        "active": false,
+        "rank": null
+      }
+    ],
+    "unmetNeedValidated": false
+  },
+  "stageDependencySuggestions": [
+    {
+      "id": "D01",
+      "fromStageId": "PLAN",
+      "toStageId": "OPERATE",
+      "targetJob": "same job",
+      "observationIds": [
+        "E01a",
+        "E03a"
+      ],
+      "documentedSupport": "Readiness preconditions and approved layout precede cutting.",
+      "interpretation": "Operator/foreman information handoff may matter; actual responsibility and failures remain unobserved.",
+      "evidenceClass": "documented prerequisites; modeled role handoff",
+      "reviewStatus": "draft",
+      "customerIncidentVerified": false
+    },
+    {
+      "id": "D02",
+      "fromStageId": "PREPARE",
+      "toStageId": "OPERATE",
+      "targetJob": "same job",
+      "observationIds": [
+        "E01b",
+        "E01g"
+      ],
+      "documentedSupport": "Specified tool system and existing skid checks concern readiness for use.",
+      "interpretation": "Setup/condition may affect the work; actual setup mistakes or inspection difficulty were not observed.",
+      "evidenceClass": "documented technical dependence; unmet need inferred",
+      "reviewStatus": "draft",
+      "customerIncidentVerified": false
+    },
+    {
+      "id": "D03",
+      "fromStageId": "OPERATE",
+      "toStageId": "PREPARE",
+      "targetJob": "same job",
+      "observationIds": [
+        "E01e",
+        "E01f"
+      ],
+      "documentedSupport": "Existing troubleshooting refers back to equipment and alignment checks.",
+      "interpretation": "A return-to-checks navigation link may help; no diagnosis or observed causal incident is established.",
+      "evidenceClass": "documented support path; usability hypothesis",
+      "reviewStatus": "draft",
+      "customerIncidentVerified": false
+    },
+    {
+      "id": "D04",
+      "fromStageId": "FINISH",
+      "toStageId": "PREPARE",
+      "targetJob": "next job",
+      "observationIds": [
+        "E01d",
+        "E04a"
+      ],
+      "documentedSupport": "Cleaning and care are prescribed.",
+      "interpretation": "Care may support next-job readiness; repeated rework and cleaning burden remain unmeasured.",
+      "evidenceClass": "documented routine; next-job dependence interpreted",
+      "reviewStatus": "draft",
+      "customerIncidentVerified": false
+    }
+  ],
+  "dependencyApplyWhen": "Show as draft modeled dependencies first. Promote each only after its source/observation chain and interpretation are reviewed; never label an arrow as a verified causal customer incident.",
+  "sourceInspectionLog": [
+    {
+      "sourceId": "E01",
+      "url": "https://content.tdr.dss.husqvarnagroup.net/pub000081368/doc000216012",
+      "inspectedAt": "2026-10-14",
+      "pass": "12:25-12:31 Europe/Stockholm planning/source check",
+      "tool": "Codex web",
+      "status": "relevant PDF text inspected",
+      "locators": [
+        "Printed pp.20-21 skid checks",
+        "Printed p.23 cut-edge troubleshooting",
+        "Printed p.24 sideways pulling",
+        "Printed p.12 readiness/layout"
+      ],
+      "reason": "New E01g and retained counterevidence require exact locators; not a reread of the entire manual",
+      "contentType": "manufacturer instructions",
+      "humanReviewed": false
+    },
+    {
+      "sourceId": "E18",
+      "url": "https://www.eschsupply.com/blog/best-practices-for-making-relief-cuts-in-concrete",
+      "inspectedAt": "2026-10-14",
+      "tool": "Codex web",
+      "status": "insufficient-page-text-on-recheck",
+      "priorStatus": "v2 records earlier Codex text inspection",
+      "usedAsNewEvidence": false,
+      "humanReviewed": false
+    },
+    {
+      "sourceId": "E19",
+      "url": "https://husqvarnacptraining.com/soff-cut-saws/",
+      "inspectedAt": "2026-10-14",
+      "tool": "Codex web",
+      "status": "page-text-and-support-paths-inspected",
+      "videoContentInspected": false,
+      "diagnosticAccuracyValidated": false,
+      "humanReviewed": false
+    },
+    {
+      "sourceId": null,
+      "url": "https://concretecoringaz.com/concrete-cutting-maricopa-az/",
+      "publishedAt": null,
+      "inspectedAt": "2026-10-14",
+      "tool": "Codex web",
+      "status": "page-text-inspected; discovery log only",
+      "locator": "Early entry at a Maricopa storefront; Straight lines on fresh concrete",
+      "observation": "Contractor attributes an early-entry storefront job to its crew working for the pouring contractor; it describes returning the slab clean to the finisher.",
+      "limitations": "Commercial first-person account, not independently witnessed work or a handoff difficulty case. Model/date unspecified; images and videos not inspected. No support for zero-risk claims.",
+      "promotedToDataset": false,
+      "raisesEvidenceScore": false
+    },
+    {
+      "sourceId": null,
+      "url": "https://concretecutting.miami/concrete-control-joints-why-they-matter-and-where-to-cut-them-in-miami/",
+      "publishedAt": "2026-09-25",
+      "publicationDateLocator": "Article byline date",
+      "inspectedAt": "2026-10-14",
+      "tool": "Codex web",
+      "status": "page-text-inspected; discovery log only",
+      "locator": "Early-Entry Versus Conventional Saw Cutting",
+      "observation": "Contractor guidance calls for coordination of finishing and cutting crews while discussing mixed early-entry and conventional work.",
+      "limitations": "Prescriptive commercial article, not a dated crew incident or a model-specific procedure; generalized depth/timing and monetary claims are not imported.",
+      "promotedToDataset": false,
+      "raisesEvidenceScore": false
+    }
+  ],
+  "boundedSearch": {
+    "performedAt": "2026-10-14",
+    "purpose": "Find original operator/contractor material on readiness and actual role handoff; not repeat baseline technical research",
+    "queries": [
+      "\"early entry sawing\" \"finishing crew\"",
+      "\"Soff-Cut\" contractor \"handoff\"",
+      "site.concreteconstruction.net \"sawing\" \"finisher\""
+    ],
+    "openedNewPrimaryPages": 2,
+    "outcome": "A commercial first-person job account and a coordination prescription were opened; neither established a selected-job handoff failure or unmet need.",
+    "uninspectedResults": "Search snippets, aggregators, old pavement/airfield documents and generic articles were not promoted as evidence.",
+    "noAbsenceClaim": "This limited pass did not establish qualifying handoff-difficulty evidence; no claim that such evidence is absent publicly."
+  },
+  "independenceAssessment": {
+    "preserveFamilyIds": true,
+    "baselineP04P05": "E01/E04 share Husqvarna-SoffCut-manual; each pain point has two observations and one source family.",
+    "E18": "Same Esch family as reserved E11; checklist may repeat manufacturer/E04 guidance. No recurrence or independent-need increment.",
+    "E19": "Different resource from E17; manufacturer affiliation and page navigation do not provide independent customer-need corroboration.",
+    "repeatedContent": "Multiple pages, observations, copied checklist content or repeated search hits do not establish independent evidence of the same need.",
+    "discoveryPages": "Commercial sources logged separately, not scored or counted as eligible need evidence."
+  },
+  "interviews": {
+    "status": "none conducted by this pass",
+    "optional": true,
+    "records": [],
+    "registration": "Separate consented interview record with actor/role, date precision, context and original account; never relabel as public-source observation."
+  },
+  "remainingDecisions": [
+    "Human review of exact new paraphrases/limitations, including carried-forward E18 content and E19 scope.",
+    "Explicit team decision on this exact v3 package and the complete scoring/rank/rubric batch; no approval recorded.",
+    "Person 2 imports when idle, verifies exact app baseline, prevents unknown records inheriting legacy eligibility and enforces full support gate.",
+    "Person 3 adapts v2-only post-import expectations to the authorized v3 five-item order in its own QA files.",
+    "Person 2 establishes preview bundle-to-commit correspondence and provides a frozen rehearsal window; existing QA observations remain separately attributed.",
+    "Preserve the full gate confirmed at 8158; validate exact O06/P06 mapping and the frozen target version before import/rehearsal. Later QA local trace tests do not establish deployed-version correspondence."
+  ],
+  "evidenceGaps": [
+    "Actual readiness/handoff information loss or unclear responsibility",
+    "Observed inspection difficulty/omissions and redesign demand",
+    "Extraction fit/performance difficulty and relevant measurements",
+    "O06 benefit beyond manuals and existing navigator; independent reference causes if diagnosing",
+    "Observed cleaning/access burden",
+    "Frequency, savings, ROI and novelty not established"
+  ],
+  "fieldChangeManifest": [
+    {
+      "id": "E18",
+      "collection": "sources",
+      "operation": "add-draft",
+      "changedFields": [
+        "title",
+        "url",
+        "type",
+        "publishedAt",
+        "familyId",
+        "limitations",
+        "inspectedAt",
+        "accessStatus",
+        "inspectionProvenance",
+        "integrationReviewStatus",
+        "priorInspectionStatus",
+        "publicationDateProvenance"
+      ],
+      "payloadPointer": "/sourcesToAdd/0",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "E19",
+      "collection": "sources",
+      "operation": "add-draft",
+      "changedFields": [
+        "title",
+        "url",
+        "type",
+        "publishedAt",
+        "familyId",
+        "limitations",
+        "inspectedAt",
+        "accessStatus",
+        "inspectionProvenance",
+        "integrationReviewStatus",
+        "scope"
+      ],
+      "payloadPointer": "/sourcesToAdd/1",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "E01e",
+      "collection": "observations",
+      "operation": "add-draft",
+      "changedFields": [
+        "sourceId",
+        "locator",
+        "paraphrase",
+        "actor",
+        "task",
+        "tools",
+        "conditions",
+        "stageIds",
+        "reviewStatus",
+        "candidateOnly",
+        "inspectionStatus",
+        "limitations"
+      ],
+      "payloadPointer": "/observationsToAdd/0",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "E01f",
+      "collection": "observations",
+      "operation": "add-draft",
+      "changedFields": [
+        "sourceId",
+        "locator",
+        "paraphrase",
+        "actor",
+        "task",
+        "tools",
+        "conditions",
+        "stageIds",
+        "reviewStatus",
+        "candidateOnly",
+        "inspectionStatus",
+        "limitations"
+      ],
+      "payloadPointer": "/observationsToAdd/1",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "E18a",
+      "collection": "observations",
+      "operation": "add-draft",
+      "changedFields": [
+        "sourceId",
+        "locator",
+        "paraphrase",
+        "actor",
+        "task",
+        "tools",
+        "conditions",
+        "stageIds",
+        "reviewStatus",
+        "candidateOnly",
+        "inspectionStatus",
+        "limitations"
+      ],
+      "payloadPointer": "/observationsToAdd/2",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "E18b",
+      "collection": "observations",
+      "operation": "add-draft",
+      "changedFields": [
+        "sourceId",
+        "locator",
+        "paraphrase",
+        "actor",
+        "task",
+        "tools",
+        "conditions",
+        "stageIds",
+        "reviewStatus",
+        "candidateOnly",
+        "inspectionStatus",
+        "limitations"
+      ],
+      "payloadPointer": "/observationsToAdd/3",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "E19a",
+      "collection": "observations",
+      "operation": "add-draft",
+      "changedFields": [
+        "sourceId",
+        "locator",
+        "paraphrase",
+        "actor",
+        "task",
+        "tools",
+        "conditions",
+        "stageIds",
+        "reviewStatus",
+        "candidateOnly",
+        "inspectionStatus",
+        "limitations",
+        "scope"
+      ],
+      "payloadPointer": "/observationsToAdd/4",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "E01g",
+      "collection": "observations",
+      "operation": "add-draft",
+      "changedFields": [
+        "sourceId",
+        "locator",
+        "paraphrase",
+        "actor",
+        "task",
+        "tools",
+        "conditions",
+        "stageIds",
+        "reviewStatus",
+        "candidateOnly",
+        "inspectionStatus",
+        "limitations"
+      ],
+      "payloadPointer": "/observationsToAdd/5",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "P06",
+      "collection": "painPoints",
+      "operation": "add-draft",
+      "changedFields": [
+        "stageIds",
+        "observationIds",
+        "interpretation",
+        "confidence",
+        "unknowns",
+        "prevalence",
+        "reviewStatus"
+      ],
+      "payloadPointer": "/painPointsToUpsert/0",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "O06",
+      "collection": "opportunities",
+      "operation": "add-draft",
+      "changedFields": [
+        "rank",
+        "title",
+        "painPointIds",
+        "hypothesis",
+        "responseType",
+        "status",
+        "scores",
+        "active",
+        "reviewStatus",
+        "existingAlternatives",
+        "counterevidence",
+        "unknowns",
+        "validation",
+        "decisionRule",
+        "proposedActive",
+        "proposedRank",
+        "evidenceEligibility"
+      ],
+      "payloadPointer": "/opportunitiesToUpsert/0",
+      "baselinePointer": null,
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "O01",
+      "collection": "opportunities",
+      "operation": "field-update-suggestion",
+      "changedFields": [
+        "scores",
+        "active",
+        "existingAlternatives",
+        "unknowns",
+        "status",
+        "validation",
+        "decisionRule"
+      ],
+      "payloadPointer": "/opportunityUpdateSuggestions/0",
+      "baselinePointer": "/opportunities/0",
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "O02",
+      "collection": "opportunities",
+      "operation": "field-update-suggestion",
+      "changedFields": [
+        "active",
+        "title",
+        "hypothesis",
+        "scores",
+        "status",
+        "existingAlternatives",
+        "unknowns",
+        "validation",
+        "decisionRule",
+        "distinctionFromO06"
+      ],
+      "payloadPointer": "/opportunityUpdateSuggestions/1",
+      "baselinePointer": "/opportunities/1",
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "O03",
+      "collection": "opportunities",
+      "operation": "field-update-suggestion",
+      "changedFields": [
+        "scores",
+        "active",
+        "existingAlternatives",
+        "unknowns",
+        "validation",
+        "decisionRule"
+      ],
+      "payloadPointer": "/opportunityUpdateSuggestions/2",
+      "baselinePointer": "/opportunities/2",
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "O05",
+      "collection": "opportunities",
+      "operation": "field-update-suggestion",
+      "changedFields": [
+        "rank",
+        "active",
+        "existingAlternatives",
+        "unknowns",
+        "validation",
+        "decisionRule"
+      ],
+      "payloadPointer": "/opportunityUpdateSuggestions/3",
+      "baselinePointer": "/opportunities/3",
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "O04",
+      "collection": "opportunities",
+      "operation": "field-update-suggestion",
+      "changedFields": [
+        "active",
+        "status",
+        "rank"
+      ],
+      "payloadPointer": "/opportunityUpdateSuggestions/4",
+      "baselinePointer": "/opportunities/4",
+      "applyWhen": "only under reviewGate"
+    },
+    {
+      "id": "PLAN",
+      "collection": "stages",
+      "operation": "conditional-append",
+      "changedFields": [
+        "observationIds"
+      ],
+      "appendIds": [
+        "E18a"
+      ],
+      "payloadPointer": "/stageObservationAppendSuggestions/0"
+    },
+    {
+      "id": "PREPARE",
+      "collection": "stages",
+      "operation": "conditional-append",
+      "changedFields": [
+        "observationIds"
+      ],
+      "appendIds": [
+        "E01e",
+        "E18a",
+        "E19a",
+        "E01g"
+      ],
+      "payloadPointer": "/stageObservationAppendSuggestions/1"
+    },
+    {
+      "id": "MOVE",
+      "collection": "stages",
+      "operation": "conditional-append",
+      "changedFields": [
+        "observationIds"
+      ],
+      "appendIds": [
+        "E18b"
+      ],
+      "payloadPointer": "/stageObservationAppendSuggestions/2"
+    },
+    {
+      "id": "OPERATE",
+      "collection": "stages",
+      "operation": "conditional-append",
+      "changedFields": [
+        "observationIds"
+      ],
+      "appendIds": [
+        "E01e",
+        "E01f",
+        "E18a",
+        "E19a"
+      ],
+      "payloadPointer": "/stageObservationAppendSuggestions/3"
+    },
+    {
+      "id": "FINISH",
+      "collection": "stages",
+      "operation": "conditional-append",
+      "changedFields": [
+        "observationIds"
+      ],
+      "appendIds": [
+        "E18b",
+        "E19a"
+      ],
+      "payloadPointer": "/stageObservationAppendSuggestions/4"
+    },
+    {
+      "id": "P02",
+      "collection": "painPoints",
+      "operation": "conditional-append",
+      "changedFields": [
+        "observationIds"
+      ],
+      "appendIds": [
+        "E01g"
+      ],
+      "payloadPointer": "/painPointObservationAppendSuggestions/0"
+    },
+    {
+      "id": "D01",
+      "collection": "stageDependencies",
+      "operation": "add-draft-modeled-link",
+      "changedFields": [
+        "fromStageId",
+        "toStageId",
+        "targetJob",
+        "observationIds",
+        "documentedSupport",
+        "interpretation",
+        "evidenceClass",
+        "reviewStatus",
+        "customerIncidentVerified"
+      ],
+      "payloadPointer": "/stageDependencySuggestions/0"
+    },
+    {
+      "id": "D02",
+      "collection": "stageDependencies",
+      "operation": "add-draft-modeled-link",
+      "changedFields": [
+        "fromStageId",
+        "toStageId",
+        "targetJob",
+        "observationIds",
+        "documentedSupport",
+        "interpretation",
+        "evidenceClass",
+        "reviewStatus",
+        "customerIncidentVerified"
+      ],
+      "payloadPointer": "/stageDependencySuggestions/1"
+    },
+    {
+      "id": "D03",
+      "collection": "stageDependencies",
+      "operation": "add-draft-modeled-link",
+      "changedFields": [
+        "fromStageId",
+        "toStageId",
+        "targetJob",
+        "observationIds",
+        "documentedSupport",
+        "interpretation",
+        "evidenceClass",
+        "reviewStatus",
+        "customerIncidentVerified"
+      ],
+      "payloadPointer": "/stageDependencySuggestions/2"
+    },
+    {
+      "id": "D04",
+      "collection": "stageDependencies",
+      "operation": "add-draft-modeled-link",
+      "changedFields": [
+        "fromStageId",
+        "toStageId",
+        "targetJob",
+        "observationIds",
+        "documentedSupport",
+        "interpretation",
+        "evidenceClass",
+        "reviewStatus",
+        "customerIncidentVerified"
+      ],
+      "payloadPointer": "/stageDependencySuggestions/3"
+    },
+    {
+      "id": "rubric",
+      "collection": "rubric",
+      "operation": "atomic-update-suggestion",
+      "changedFields": [
+        "scale",
+        "evidence",
+        "rankPolicy"
+      ],
+      "payloadPointer": "/rubricUpdate"
+    }
+  ],
+  "changesSinceV2": {
+    "records": [
+      {
+        "id": "E18",
+        "section": "sourcesToAdd",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "limitations",
+          "accessStatus",
+          "inspectionProvenance",
+          "priorInspectionStatus",
+          "publicationDateProvenance"
+        ],
+        "priorPointer": "/sourcesToAdd/0",
+        "proposalPointer": "/sourcesToAdd/0"
+      },
+      {
+        "id": "E19",
+        "section": "sourcesToAdd",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "limitations",
+          "scope"
+        ],
+        "priorPointer": "/sourcesToAdd/1",
+        "proposalPointer": "/sourcesToAdd/1"
+      },
+      {
+        "id": "E18a",
+        "section": "observationsToAdd",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "inspectionStatus",
+          "limitations"
+        ],
+        "priorPointer": "/observationsToAdd/2",
+        "proposalPointer": "/observationsToAdd/2"
+      },
+      {
+        "id": "E18b",
+        "section": "observationsToAdd",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "inspectionStatus",
+          "limitations"
+        ],
+        "priorPointer": "/observationsToAdd/3",
+        "proposalPointer": "/observationsToAdd/3"
+      },
+      {
+        "id": "E19a",
+        "section": "observationsToAdd",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "locator",
+          "conditions",
+          "limitations",
+          "scope"
+        ],
+        "priorPointer": "/observationsToAdd/4",
+        "proposalPointer": "/observationsToAdd/4"
+      },
+      {
+        "id": "E01g",
+        "section": "observationsToAdd",
+        "operation": "new-in-v3",
+        "changedFields": [
+          "sourceId",
+          "locator",
+          "paraphrase",
+          "actor",
+          "task",
+          "tools",
+          "conditions",
+          "stageIds",
+          "reviewStatus",
+          "candidateOnly",
+          "inspectionStatus",
+          "limitations"
+        ],
+        "priorPointer": null,
+        "proposalPointer": "/observationsToAdd/5"
+      },
+      {
+        "id": "P06",
+        "section": "painPointsToUpsert",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "unknowns"
+        ],
+        "priorPointer": "/painPointsToUpsert/0",
+        "proposalPointer": "/painPointsToUpsert/0"
+      },
+      {
+        "id": "O06",
+        "section": "opportunitiesToUpsert",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "existingAlternatives",
+          "unknowns",
+          "validation",
+          "proposedRank"
+        ],
+        "priorPointer": "/opportunitiesToUpsert/0",
+        "proposalPointer": "/opportunitiesToUpsert/0"
+      },
+      {
+        "id": "O01",
+        "section": "opportunityUpdateSuggestions",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "validation",
+          "decisionRule"
+        ],
+        "priorPointer": "/opportunityUpdateSuggestions/0",
+        "proposalPointer": "/opportunityUpdateSuggestions/0"
+      },
+      {
+        "id": "O02",
+        "section": "opportunityUpdateSuggestions",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "active",
+          "status",
+          "rank",
+          "title",
+          "painPointIds",
+          "hypothesis",
+          "scores",
+          "responseType",
+          "existingAlternatives",
+          "unknowns",
+          "validation",
+          "decisionRule",
+          "distinctionFromO06"
+        ],
+        "priorPointer": "/opportunityUpdateSuggestions/3",
+        "proposalPointer": "/opportunityUpdateSuggestions/1"
+      },
+      {
+        "id": "O03",
+        "section": "opportunityUpdateSuggestions",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "rank",
+          "validation",
+          "decisionRule"
+        ],
+        "priorPointer": "/opportunityUpdateSuggestions/1",
+        "proposalPointer": "/opportunityUpdateSuggestions/2"
+      },
+      {
+        "id": "O05",
+        "section": "opportunityUpdateSuggestions",
+        "operation": "changed-since-v2",
+        "changedFields": [
+          "rank",
+          "validation",
+          "decisionRule"
+        ],
+        "priorPointer": "/opportunityUpdateSuggestions/2",
+        "proposalPointer": "/opportunityUpdateSuggestions/3"
+      }
+    ],
+    "changedTopLevelFields": [
+      "proposalVersion",
+      "status",
+      "rubricUpdate",
+      "accessLogAdditions",
+      "coordination",
+      "reviewGate",
+      "rankingRules",
+      "stageObservationAppendSuggestions",
+      "createdAt",
+      "baselineRepository",
+      "baselineCommit",
+      "originalPlanBaseCommit",
+      "baselineFile",
+      "baselineContentNote",
+      "priorProposal",
+      "appBaseline",
+      "reviewState",
+      "painPointObservationAppendSuggestions",
+      "proposedPriority",
+      "atomicOpportunityBatch",
+      "stageDependencySuggestions",
+      "dependencyApplyWhen",
+      "sourceInspectionLog",
+      "boundedSearch",
+      "independenceAssessment",
+      "interviews",
+      "remainingDecisions",
+      "evidenceGaps",
+      "researchSnapshotAtStart",
+      "qaReference",
+      "qaPreconditions",
+      "verification",
+      "fieldUpdatePolicy",
+      "reviewTransitionsAfterApproval",
+      "semanticImportInvariants"
+    ],
+    "note": "See exact priorProposal blob for before values and proposal pointers for after values; no v2 file rewritten."
+  },
+  "researchSnapshotAtStart": "193c482ba0e822ca66cc6054c85255feaaf565be",
+  "qaReference": {
+    "repository": "https://github.com/MysteriousGuardian/Aifabriken",
+    "commit": "6b3813b3ec9fe513e6f7f5092b3b4adf7f75cf65",
+    "path": "qa/qa-report.md",
+    "scope": "Newest QA append read; prior Strawberry bundle, local pinned app checks and code inspection remain separately attributed."
+  },
+  "qaPreconditions": [
+    {
+      "id": "QA-05",
+      "owner": "Person 2 / Person 3",
+      "status": "candidate filter present at 8158; QA reports local closure at 8008474; deployed version not verified",
+      "beforeDemo": "Confirm the frozen deployed version includes the candidate exclusion; preserve the dedicated candidate view."
+    },
+    {
+      "id": "QA-06",
+      "owner": "Person 2 / Person 3",
+      "status": "QA-06 closed for the linked-support path at 8158; exact hypothesis mapping remains a separate import invariant, and deployed-version QA is not certified.",
+      "blocksImport": true,
+      "problem": "A generic reviewed graph can accept O06 linked only to P02; it does not establish support for the specific O06 hypothesis.",
+      "requiredRetest": "Require O06 painPointIds exactly [P06]; reject P02-only or mixed mapping in the import validator. Preserve required P06 observation IDs; then verify every required record's review gate on the actual import. Never use the older top-level-only ranking helper directly."
+    }
+  ],
+  "verification": {
+    "performedBy": "Codex",
+    "performedAt": "2026-10-14T12:49:33+02:00",
+    "status": "12 structural checks passed; final manifest checked separately",
+    "checks": [
+      "Unika baseline- och nya IDs; reserverade IDs skyddade",
+      "Alla käll-, steg-, smärtpunkt- och opportunity-referenser",
+      "Fullständiga villkorade stage-backlinks och E01g -> P02",
+      "Alla nya poster är draft; ingen mänsklig granskning eller importgodkännande",
+      "Poäng 1-3, inga lagrade totaler; atomisk rubrik och förväntad ordning",
+      "Kandidater utanför valt workflow; P04/P05 har en familj",
+      "Datumprecision och åtkomsthistorik bevarade",
+      "Före godkännande: baseline oförändrad; inaktiv högpoäng, draft och okända poster filtreras först",
+      "Simulerat komplett godkännande: fem aktiva, unika rangtal, O04 backlog",
+      "O06 saknar eligibility vid ett draft-stöd eller P02-bypass trots toppnivåflaggor",
+      "Simulerad approved append: relationerna fungerar åt båda håll",
+      "Ändringsmanifestets payload-pekare fungerar"
+    ],
+    "simulationOnly": true,
+    "sourceMeaningScope": "Targeted AI source review; no human or team approval inferred",
+    "talkWords": 302,
+    "liveDemoRehearsalPerformed": false,
+    "vitestBuildOrBrowserRunByResearchPass": false,
+    "actualAppPureModuleChecks": {
+      "commit": "8158fec0dcfe5674689dba88a92c7d4e8afab7ed",
+      "sourceBlob": "c62cdcaaab2f419dc51e9ca0fa8c01f29ab1bbc4",
+      "method": "Type-erased actual module, identical baseline substituted for import; temporary module outside repo removed before in-memory fixtures; no app/test files changed.",
+      "checkGroupsPassed": 8,
+      "checks": [
+        "Baseline order",
+        "Unknown record missing review excluded",
+        "Uncleared ineligible text excludes O06",
+        "Full synthetic approved order",
+        "Draft P06 excludes O06 including P02 alternate",
+        "Each required draft observation excludes O06",
+        "Each required draft source excludes O06",
+        "Package itself retains exact O06 -> P06 only"
+      ],
+      "additionalNegativeCase": {
+        "input": "synthetic O06 reviewed/active with painPointIds [P02] only",
+        "genericHelperResult": "accepted",
+        "hypothesisSpecificExpectedResult": "reject",
+        "status": "semantic mapping not enforced by generic helper; package/import invariant required"
+      },
+      "actualAppApproval": false,
+      "deployedRuntimeVerified": false
+    }
+  },
+  "fieldUpdatePolicy": "Apply only explicitly supplied fields; absent fields preserve baseline values. Append suggestions deduplicate. Never treat this proposal as a replacement dataset.",
+  "reviewTransitionsAfterApproval": {
+    "warning": "Conditional future transitions, NOT current record status or evidence of approval. Do not apply until the exact records are reviewed and the team decision is recorded; freeze the handoff package unchanged.",
+    "sources": {
+      "ids": [
+        "E18",
+        "E19"
+      ],
+      "field": "integrationReviewStatus",
+      "from": "draft",
+      "to": "reviewed",
+      "applyWhen": "each exact source content/limitations approved; preserve current access history"
+    },
+    "observations": {
+      "ids": [
+        "E01e",
+        "E01f",
+        "E18a",
+        "E18b",
+        "E19a",
+        "E01g"
+      ],
+      "field": "reviewStatus",
+      "from": "draft",
+      "to": "reviewed",
+      "applyWhen": "each paraphrase/locator/scope approved and its source eligible"
+    },
+    "painPoints": {
+      "ids": [
+        "P06"
+      ],
+      "field": "reviewStatus",
+      "from": "draft",
+      "to": "reviewed",
+      "applyWhen": "interpretation/uncertainty and every required support record approved"
+    },
+    "opportunity": {
+      "id": "O06",
+      "afterApprovalFields": {
+        "active": true,
+        "rank": 4,
+        "reviewStatus": "reviewed",
+        "evidenceEligibility": "eligible after documented full support review"
+      },
+      "applyWhen": "O06 and the entire P06 support chain approved, atomic batch accepted and QA-06 fixed/retested; eligibility text does not replace a graph check"
+    },
+    "applyLocation": "Person 2's app dataset/review register after approval; not this frozen proposal file"
+  },
+  "semanticImportInvariants": [
+    {
+      "id": "O06",
+      "field": "painPointIds",
+      "expectedExactly": [
+        "P06"
+      ],
+      "reject": "P02-only, mixed P02/P06 or any other rerouting; a reviewed generic path is not hypothesis-specific support"
+    },
+    {
+      "id": "P06",
+      "field": "observationIds",
+      "expectedExactly": [
+        "E01e",
+        "E01f",
+        "E18a",
+        "E19a"
+      ],
+      "reject": "Dropped/replaced required support; all required records/sources must be approved"
+    }
+  ]
+}
