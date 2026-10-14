@@ -2,6 +2,10 @@
 
 Detta paket innehåller allt granskat forsknings- och planeringsunderlag för teamet. Deadline är **16:00, 14 oktober 2026, Stockholmstid**. Vi är **tre personer**.
 
+## Senaste komplettering — läs först
+
+[Granskning av ny research och rättad verktygsplan](research/research-review-and-tooling.md). Teamet har Claude Code, Codex, Lovable via MCP och Strawberry Browser med extra credits. Lovable i Vibeathon är huvudspåret för appbygget. Kompletteringen rättar flera för starka researchslutsatser och delar av den bifogade Claude-prompten; kopiera inte dess utökade dataset som verifierat utan granskning.
+
 ## Rekommenderat scope
 
 En professionell operatör sågar initiala kontraktionsfogar i en nygjuten utomhusplatta med en early-entry-såg. Utforska hela jobbet: PLAN → PREPARE → MOVE → OPERATE → FINISH. Stöd för startförutsättningar och överlämning är första prioritet; verktygsskick och utsugssystem är ytterligare R&D-hypoteser.
