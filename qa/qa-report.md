@@ -1,0 +1,113 @@
+# Customer Job Twin — Browser QA report
+
+## Run identity
+
+- Tester: Pip / Strawberry Browser
+- Run: 2026-10-14, approximately 11:55–11:59 Europe/Stockholm; final fingerprint recorded at 2026-10-14T09:59:01.560Z.
+- Preview: https://id-preview--2ebd52fa-131b-4aba-9934-92d1e2646935.lovable.app/
+- Tested deployment fingerprint: `/assets/index-DO3HIn-1.js`; commit/version not exposed and not verified. This identifies the observed bundle name, not a source-code review or cryptographic digest.
+- UI state: reviewed baseline dated 2026-10-14; Draft import proposal v2 visibly pending integration review, not applied.
+- Browser-reported app viewport: **876×799 CSS px**. Required 1366×768 and 1280×800 at 100%/125% zoom were **NOT TESTED**. No horizontal overflow measured at the observed width (`documentElement.scrollWidth = innerWidth = 876`). Zoom reset was attempted, but its effective percentage was not verified.
+- Prior login blocker: resolved before this run by user-provided accessible tab. It no longer blocks the tested paths.
+
+## Summary
+
+Core five-step navigation and PLAN → P01 → E03a → source → O01 passed. No P0/P1 defect was observed in the exercised paths. Three P2 gaps and one P3 exact-copy mismatch were found. Full layout acceptance remains NOT TESTED. The current baseline correctly retains five opportunities while the draft is unapproved; four active opportunities must not be demanded yet.
+
+No app source-code review, validator, local regression script, post-approval integration test, or research/UI modification was performed. Reading research.json for expected source URLs is not reviewing app implementation. Report ownership below is by team role, not a verified named assignee.
+
+## Acceptance results
+
+| # | Result | Observed result / qualification |
+|---|---|---|
+| 1 | FAIL | Initial attached app had PLAN selected. Required literal title/review line differ: heading `Early-entry Concrete Joint Cutting` with separate `Customer Job Twin`; document title uses an em dash; review line uses `(reviewed 2026-10-14)`. Cosmetic exact-copy mismatch, QA-04. |
+| 2 | PASS | All five steps clickable in exact order; each showed actors, tasks, equipment, dependencies, pain points and evidence gaps. MOVE: P04 and transport/posture gaps. FINISH: P05 and disposal/acceptance/reporting gaps. |
+| 3 | PASS | P01 has green A Observed evidence, blue B Interpretation and orange C Untested R&D hypothesis blocks, visually separated. |
+| 4 | PASS | E03a shows ID, paraphrase, NRMCA CIP 6 title, industry association guidance type, 2014, `PDF p.2: item c and rules 1–3`, actor/task, conditions, tools, reviewed status and limitations. |
+| 5 | PASS | E03a source click opened a separate tab at the exact URMCA PDF URL; original app remained open. |
+| 6 | PASS | P01 hypothesis link has `#O01`; click reached O01 Readiness and handoff support, marked untested hypothesis with validation experiment and no predicted safe start time. |
+| 7 | PASS | Reviewed baseline order O01/O02/O03/O05/O04; components and displayed sums 11/10/10/8/8 match 3+3+3+2, 3+2+2+3, 3+2+2+3, 2+1+2+3, 2+1+2+3. Provisional judgment and scale visible. |
+| 8 | PASS | E04/E05/E06/E07 display `unknown date` rather than fabricated dates, blanks or epoch dates. Literal capitalization differs from `Unknown`, but missing-date semantics are preserved. |
+| 9 | PASS | E02 2007; E08 2017-12; E10 2010-04. No day invented and no month/year shift. |
+| 10 | PASS | E08 limitation explicitly says US wet-saw guidance, not suitability/compliance of dry Soff-Cut setup, not Swedish legal advice. |
+| 11 | FAIL | P04/P05 panels show two observation IDs each, but no separate source-family and observation counters; cannot see required 1-family count. No counts labelled prevalence. QA-01. |
+| 12 | PASS | Search `skid` result list contains E01b/E02a/E04a/O02/O04, no pain-point result or candidate observation result; `handoff` returns P01/O01. Main stage and previously open detail remain below the search results; E09/E10 are clearly candidate-only there, not counted as direct search hits. |
+| 13 | PASS | `xyzzy` shows a helpful no-results statement including that absence in curated data is not absence in the field; Reset available, no crash/white page observed. |
+| 14 | PASS | With PREPARE selected and query present, Reset clears query, restores PLAN, restores stage content and clears selected panels. |
+| 15 | FAIL | Header says curated public research and no automatic discovery, but does not disclose which loading/search/traversal/arithmetic operations are automated versus source selection/extraction/interpretation being curated. QA-02. |
+| 16 | PASS | Exercised visible UI contained no numerical savings, costs, injuries, ROI or prevalence claims. `Prevalence: unknown` / `not established` are uncertainty disclosures, not metrics. This is a visible-UI assessment, not a code/data exhaustive scan. |
+| 17 | FAIL | Tabbing reached search, Reset, stages, observations, pain point, A evidence buttons, hypothesis link, source link and draft summary. Focus outlines observed; Space/Enter activated PLAN/PREPARE and P01. Escape did not dismiss P01; no focusable panel close control found. QA-03. Source link was keyboard-reachable; outbound activation used clicks in the source tests. Fresh keyboard-only reload and every interactive activation were not independently verified. |
+| 18 | NOT TESTED | Exact required viewport/zoom combinations were not established. At observed 876×799 no document-wide horizontal overflow; panels inline, not overlaying navigation. This is not a substitute for prescribed layout acceptance. |
+| 19 | PASS | Source links E01–E10 were clicked and each opened the exact URL in research.json, including E07/E08. External accessibility: E07 blocked by Cloudflare; E08 PDF rendered. Other source content availability not comprehensively assessed. |
+| 20 | NOT TESTED | Conditional post-approval integration test is not applicable to pending draft state. Current five-item reviewed baseline is expected, not a failure. |
+| 21 | NOT TESTED | Approved active tie-break behavior cannot be exercised before integration. Proposed policy is visibly labelled pending, not applied. |
+| 22 | PASS | Current draft state: O06 only in draft proposal, from P06, `rank: none`, no reviewed score, ineligible while draft, with full observation/source review gate and explicit rejection of generic P02 substitution. Not in reviewed ranking. No reviewed counters are exposed, so underlying counter arithmetic is not verified. |
+| 23 | PASS | Draft observations show explicit stage labels: E01e PREPARE/OPERATE; E01f OPERATE; E18a PLAN/PREPARE/OPERATE; E18b MOVE/FINISH; E19a PREPARE/OPERATE/FINISH. Reviewed stage lists were not promoted with these IDs. Post-approval bidirectional integration remains untested. |
+
+## Defects and smallest fixes
+
+### QA-01 · P2 · app/UI omission — missing source-family counters
+
+- Criteria: #11.
+- Reproduce: select MOVE → P04; inspect A and B; then FINISH → P05.
+- Expected: separate reviewed observation count and deduplicated source-family count, each panel showing 2 observations from 1 family (E01/E04 shared family).
+- Actual: observation buttons visible, no numerical observation/family counters.
+- Owner: Person 2 / UI builder; Person 1 / research owner confirms family grouping semantics.
+- Smallest fix: show two labelled counters derived only from eligible reviewed observations and deduplicated familyId; never name the counts prevalence. Keep draft/candidate records out.
+
+### QA-02 · P2 · app disclosure omission — partial automation explanation
+
+- Criterion: #15.
+- Reproduce: inspect header disclosure and opportunities rubric; search page for automation/curation explanation.
+- Expected: automated loading, search/filter, relationship traversal, score arithmetic; curated source selection/extraction/mapping/interpretation/hypotheses/score inputs; no automatic discovery.
+- Actual: only curated-public-research/review date/no automatic discovery/prevalence-not-established are explained.
+- Owner: Person 2 / UI builder, with copy confirmation from Person 1.
+- Smallest fix: add concise visible automated-versus-curated disclosure using the existing research meta semantics, without suggesting AI discovery or validation that does not exist.
+
+### QA-03 · P2 · app accessibility — panels cannot be dismissed with Escape/close
+
+- Criterion: #17.
+- Reproduce: PLAN → focus P01 → Space; panel opens; press Escape. Tab through evidence/hypothesis/source controls looking for a close action.
+- Expected: Escape or a focusable close control dismisses panel and returns focus to opener.
+- Actual: Escape leaves A/B/C panel unchanged; no focusable close control observed. Reset clears state, but is not a panel close-and-focus-return behavior.
+- Owner: Person 2 / UI builder; Person 3 / QA retests focus return.
+- Smallest fix: add labelled close buttons for pain-point/evidence panels and Escape handling, preserve opener reference and return focus on close. Retest Tab/Shift+Tab and Enter/Space.
+
+### QA-04 · P3 · app copy — literal heading/review line mismatch
+
+- Criterion: #1.
+- Reproduce: view header/document title.
+- Expected literal copy: `Customer Job Twin: Early-entry Concrete Joint Cutting` and `Curated public research · reviewed 14 October 2026`.
+- Actual: product name split above heading; document title uses em dash; header review line uses ISO date in parentheses.
+- Owner: Person 2 / UI builder, Person 1 accepts any intentional copy change.
+- Smallest fix: use acceptance copy, or document team-approved updated criterion. This does not break the demo path.
+
+## External-source observations — not app defects
+
+- **E07 Ruwac:** exact app URL opens, then Cloudflare `Sorry, you have been blocked` / `You are unable to access ruwac.com`. Do not mislabel as wrong app link. For demo use visible locator/paraphrase with its commercial/no-exposure-measurement limitation; do not imply fresh page verification.
+- **E08 OSHA:** exact PDF URL opens and renders `Walk-Behind Saws`, two pages. No access blocker in this pass. App retains wet-versus-dry applicability limitation.
+
+## Exact source link verification
+
+All links below were observed in the app and clicked to a new tab; each matches the reviewed dataset.
+
+| Source | URL |
+|---|---|
+| E01 | https://content.tdr.dss.husqvarnagroup.net/pub000081368/doc000216012 |
+| E02 | https://www.fhwa.dot.gov/pavement/concrete/pubs/07031/07031.pdf |
+| E03 | https://urmca.org/wp-content/uploads/2018/09/06pr.pdf |
+| E04 | https://www.speedcrete.co.uk/media/mageplaza/product_attachments/attachment_file/g/u/guide_to_soft_cut.pdf |
+| E05 | https://orcaconcrete.com/services/ |
+| E06 | https://fandsmasonry.com/concrete-services/saw-cutting/ |
+| E07 | https://www.ruwac.com/concrete-saw-dust-control-early-entry-sawing/ |
+| E08 | https://www.osha.gov/sites/default/files/publications/OSHA_FS-3633.pdf |
+| E09 | https://content.tdr.dss.husqvarnagroup.net/pub000076326/doc000130319 |
+| E10 | https://www-static-nw.husqvarna.com/hbd/tdrdownload/v2/pub000046120/doc000082649/OM/fhYKSGqA9fJVgwr93CWJsRwNP14 |
+
+## Reference versions
+
+- acceptance-checklist.md blob: `2934b31388b56e2b998f23cdb794ba542d100ffc`.
+- research.json blob: `3212a9159e69725d56aa74770dbec80ee5fd0082`.
+- qa-research-response.md blob: `d252c30093da2391051ec236539ce4396b6aef2e` (corrects #20/#22; baseline before approval must be retained).
+
+Visual evidence of A/B/C separation captured locally as `qa/abc-panel.png` in the Strawberry chat workspace; not committed to the repo. All findings are browser observations, not implementation assertions.
