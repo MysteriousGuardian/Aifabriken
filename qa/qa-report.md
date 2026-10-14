@@ -165,3 +165,37 @@ Updated acceptance-checklist.md in commit 95ce56ec6e78c42ffc76965569c2ee201ae25b
 | Three-minute live demo rehearsal | NOT TESTED | Run Person 1's version-matched script against accessible frozen app |
 
 Recommended retest sequence: fresh load/reload → five stages → PLAN/P01/E03a/source/O01 → ranking and draft exclusion → search/reset → family counters/disclosure → panel close/focus → required viewport/zoom combinations → timed demo. Preserve the existing report's external-source limitations. No deploy, build request or production-code change was made.
+
+
+## Codex source review — repository access restored
+
+Reviewed app snapshot: MysteriousGuardian/hackathon-mdd, main snapshot d97f7c1aa2a0c9c82d1894aa612c9f6ce726eb1c. Read AGENTS.md, package.json, src/lib/research.ts, src/routes/index.tsx, src/components/DraftProposal.tsx and src/data/research.json through GitHub. This confirms code access; synced-branch configuration, a builder freeze and current deployed-version equivalence are still not independently verified.
+
+### Verified from code
+
+- App research.json blob is exactly baseline 3212a9159e69725d56aa74770dbec80ee5fd0082.
+- Main table calls rankReviewedOpportunities: filters before sorting; sum is calculated from four fields, rank breaks ties.
+- DraftProposal is a separate component reading a separate file, outside the reviewed table.
+- Dates render as original strings with an unknown fallback.
+- Evidence panel has aria-live and focus handling for observation search selection.
+- Earlier QA-01 family counters, QA-02 detailed automation disclosure and QA-03 close/focus-return controls remain absent in this reviewed snapshot. This is static confirmation, not browser retest.
+
+### QA-05 · P1 · appfel — candidate observations enter unlabelled search results
+
+Owner: Person 2. Location: src/routes/index.tsx:50 and the search result renderer.
+
+Reproduction to run in browser: search SG13 (or PG 540). Expected: candidate-only records excluded from selected-job search, or explicitly separated and labelled candidate-only in the result itself. Actual code searches all observations and renders only generic Observation label. Evaluating the exact JSON substring predicate against the pinned dataset returns E10a with candidateOnly=true for SG13. The later evidence panel does label it correctly; that does not label the search hit.
+
+Smallest fix: exclude candidateOnly observations from main search, preserving the dedicated candidate section. Regression: SG13/PG 540 must not surface E10a/E09a as ordinary selected-job hits; skid/handoff must continue to work. The earlier skid test did not exercise this failure because neither candidate matched that query.
+
+### QA-06 · P1 before integration · appfel — review eligibility does not validate support
+
+Owner: Person 2. Locations: src/lib/research.ts:25–35 and 48–52.
+
+The eligibility function checks only opportunity flags/rank and an ineligible text prefix. It does not examine pain-point, observation or source review. Missing status is accepted for every record, not only the known legacy baseline. opportunityChainValid uses some() over paths and checks existence, not full support eligibility; its result only controls a warning, not ranking.
+
+Current baseline and separately rendered O06 draft are not shown to be incorrectly ranked. This becomes an integration blocker if records are merged or promoted. Test: a new ranked record lacking explicit review must be excluded; a reviewed opportunity backed by draft P06/observations/source must be excluded even if another reachable path is reviewed. Preserve the known baseline compatibility, and validate required support before ranking. A mock test of the top-level flag alone cannot prove this gate.
+
+### Execution limits
+
+No Vitest/build/browser test run is claimed. package.json exposes vitest run, but tests were not located or executed in this pass. No app files, test files, research data or Lovable build state were modified. Person 2 owns minimal fixes; exact test-file ownership remains to be agreed before QA adds app tests.
