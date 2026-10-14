@@ -2,6 +2,10 @@
 
 Detta paket innehåller allt granskat forsknings- och planeringsunderlag för teamet. Deadline är **16:00, 14 oktober 2026, Stockholmstid**. Vi är **tre personer**.
 
+## Senaste researchbeslut — 11:21-pass
+
+[Verifierade motbevis, fyra aktiva möjligheter och treminutersdemo](research/research-decision-update.md). [Separat importförslag](research/research-import-proposal.json) för appbyggarens granskning; befintliga research.json är oförändrad. Manualen innehåller redan felsökning efter dåliga fogkanter. Förslaget prövar kontextuell åtkomst till befintligt stöd, inte påstådd avsaknad av diagnoshjälp. Detta beslut ersätter äldre möjlighetspoäng om förslaget integreras.
+
 ## Senaste komplettering — läs först
 
 [Granskning av ny research och rättad verktygsplan](research/research-review-and-tooling.md). Teamet har Claude Code, Codex, Lovable via MCP och Strawberry Browser med extra credits. Lovable i Vibeathon är huvudspåret för appbygget. Kompletteringen rättar flera för starka researchslutsatser och delar av den bifogade Claude-prompten; kopiera inte dess utökade dataset som verifierat utan granskning.
