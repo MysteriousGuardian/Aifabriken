@@ -1,0 +1,789 @@
+{
+  "meta": {
+    "title": "Customer Job Twin: Early-entry Concrete Joint Cutting",
+    "reviewedAt": "2026-10-14",
+    "deadline": "2026-10-14T16:00:00+02:00",
+    "scope": "Initial dry early-entry contraction-joint cutting on one fresh outdoor slab",
+    "dataMode": "curated public research",
+    "automation": [
+      "loading",
+      "search/filter",
+      "relationship traversal",
+      "score arithmetic"
+    ],
+    "curated": [
+      "source selection",
+      "extraction",
+      "stage mapping",
+      "interpretation",
+      "hypotheses",
+      "score inputs"
+    ],
+    "automaticDiscoveryImplemented": false,
+    "prevalenceEstablished": false,
+    "excludedAccess": "Reddit humanity challenge: excluded; no video content inspected",
+    "teamSize": 3,
+    "reportedBudget": {
+      "lovableCreditsApprox": 15000,
+      "additionalCreditsFigure": 2100,
+      "allocationStatus": "User wording ambiguous; tool attribution and per-person allocation unverified; not a combined budget or spending authorization"
+    }
+  },
+  "rubric": {
+    "scale": "1–3, equal weight, sum /12; provisional judgment",
+    "impact": [
+      "convenience",
+      "potentially important workflow/quality burden",
+      "potentially consequential outcome/exposure"
+    ],
+    "evidence": [
+      "mainly procedural inference",
+      "task evidence plus practitioner context",
+      "independent technical corroboration"
+    ],
+    "feasibility": [
+      "major sensing/control dependency",
+      "testable concept with substantial development",
+      "simple prototype/experiment"
+    ],
+    "relevance": [
+      "indirect",
+      "service/process adjacent",
+      "direct equipment/tool/system"
+    ]
+  },
+  "sources": [
+    {
+      "id": "E01",
+      "title": "Husqvarna Soff-Cut 150 / 150D operator manual",
+      "url": "https://content.tdr.dss.husqvarnagroup.net/pub000081368/doc000216012",
+      "type": "manufacturer manual",
+      "publishedAt": "2021-07-06",
+      "inspectedAt": "2026-10-14",
+      "familyId": "Husqvarna-SoffCut-manual",
+      "accessStatus": "inspected",
+      "limitations": "Model-specific instructions; archived revision; not observed behavior or prevalence."
+    },
+    {
+      "id": "E02",
+      "title": "FHWA: Early-Entry Sawing of Portland Cement Concrete Pavements",
+      "url": "https://www.fhwa.dot.gov/pavement/concrete/pubs/07031/07031.pdf",
+      "type": "government technical synthesis",
+      "publishedAt": "2007",
+      "inspectedAt": "2026-10-14",
+      "familyId": "FHWA-early-entry",
+      "accessStatus": "inspected",
+      "limitations": "Independent engineering context; pavement results cannot prescribe floor-slab design; older studies."
+    },
+    {
+      "id": "E03",
+      "title": "NRMCA CIP 6: Joints in Concrete Slabs on Grade",
+      "url": "https://urmca.org/wp-content/uploads/2018/09/06pr.pdf",
+      "type": "industry association guidance",
+      "publishedAt": "2014",
+      "inspectedAt": "2026-10-14",
+      "familyId": "NRMCA-CIP6",
+      "accessStatus": "inspected",
+      "limitations": "Hosted by URMCA; general guidance, not customer field research or a substitute for specifications."
+    },
+    {
+      "id": "E04",
+      "title": "Using Soft-Cut Early-Entry Blades",
+      "url": "https://www.speedcrete.co.uk/media/mageplaza/product_attachments/attachment_file/g/u/guide_to_soft_cut.pdf",
+      "type": "supplier guidance",
+      "publishedAt": null,
+      "inspectedAt": "2026-10-14",
+      "familyId": "Husqvarna-SoffCut-manual",
+      "accessStatus": "inspected",
+      "limitations": "Potentially shared manufacturer guidance; conservatively grouped with E01 for source-family counts."
+    },
+    {
+      "id": "E05",
+      "title": "ORCA Concrete: Services",
+      "url": "https://orcaconcrete.com/services/",
+      "type": "contractor service page",
+      "publishedAt": null,
+      "inspectedAt": "2026-10-14",
+      "familyId": "ORCA",
+      "accessStatus": "inspected",
+      "limitations": "Commercial practitioner statement; no measured outcome or prevalence."
+    },
+    {
+      "id": "E06",
+      "title": "Father & Son Masonry: Concrete Saw Cutting",
+      "url": "https://fandsmasonry.com/concrete-services/saw-cutting/",
+      "type": "contractor service page",
+      "publishedAt": null,
+      "inspectedAt": "2026-10-14",
+      "familyId": "Father-and-Son",
+      "accessStatus": "inspected",
+      "limitations": "Mixes wet cutting, demolition and early-entry; timing wording differs; slurry procedure excluded from selected dry job."
+    },
+    {
+      "id": "E07",
+      "title": "Ruwac: Concrete Saw Dust Control for Early Entry Sawing",
+      "url": "https://www.ruwac.com/concrete-saw-dust-control-early-entry-sawing/",
+      "type": "supplier application page",
+      "publishedAt": null,
+      "inspectedAt": "2026-10-14",
+      "familyId": "Ruwac",
+      "accessStatus": "inspected",
+      "limitations": "Commercial claims; no exposure measurement or compliance proof."
+    },
+    {
+      "id": "E08",
+      "title": "OSHA: Walk-Behind Saws",
+      "url": "https://www.osha.gov/sites/default/files/publications/OSHA_FS-3633.pdf",
+      "type": "regulator fact sheet",
+      "publishedAt": "2017-12",
+      "inspectedAt": "2026-10-14",
+      "familyId": "OSHA",
+      "accessStatus": "inspected",
+      "limitations": "US wet-saw guidance; does not establish suitability or compliance of a dry Soff-Cut setup; not Swedish legal advice."
+    },
+    {
+      "id": "E09",
+      "title": "Husqvarna PG 540 operator manual",
+      "url": "https://content.tdr.dss.husqvarnagroup.net/pub000076326/doc000130319",
+      "type": "manufacturer manual",
+      "publishedAt": "2019-10-24",
+      "inspectedAt": "2026-10-14",
+      "familyId": "Husqvarna-PG540",
+      "accessStatus": "inspected",
+      "limitations": "Candidate comparison only; model-specific procedure, no independent burden evidence."
+    },
+    {
+      "id": "E10",
+      "title": "Husqvarna SG13 operator manual",
+      "url": "https://www-static-nw.husqvarna.com/hbd/tdrdownload/v2/pub000046120/doc000082649/OM/fhYKSGqA9fJVgwr93CWJsRwNP14",
+      "type": "manufacturer manual",
+      "publishedAt": "2010-04",
+      "inspectedAt": "2026-10-14",
+      "familyId": "Husqvarna-SG13",
+      "accessStatus": "inspected",
+      "limitations": "Candidate comparison only; current availability unverified; historical manual."
+    }
+  ],
+  "observations": [
+    {
+      "id": "E01a",
+      "sourceId": "E01",
+      "locator": "Printed pp.2,12: Intended use and joint sawing",
+      "paraphrase": "Professional outdoor early-entry use; layout approval and concrete supporting saw/operator precede cutting.",
+      "actor": "Contractor/operator",
+      "task": "Confirm job readiness",
+      "tools": [
+        "Soff-Cut 150",
+        "joint plan"
+      ],
+      "conditions": [
+        "fresh outdoor slab"
+      ],
+      "stageIds": [
+        "PLAN",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E01b",
+      "sourceId": "E01",
+      "locator": "Printed pp.12,14: System criteria and To do work with dust",
+      "paraphrase": "Blade/skid pairing and extraction connection are specified; an adapter may be needed and extraction performance can change.",
+      "actor": "Operator",
+      "task": "Prepare tool and extraction system",
+      "tools": [
+        "blade",
+        "skid",
+        "extractor",
+        "hose"
+      ],
+      "conditions": [
+        "dry early-entry cutting"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E01c",
+      "sourceId": "E01",
+      "locator": "Printed pp.25–26: Transportation and lifting",
+      "paraphrase": "Blade removal, vehicle restraint and designated lifting arrangements are prescribed.",
+      "actor": "Operator/handler",
+      "task": "Transport equipment",
+      "tools": [
+        "vehicle",
+        "straps",
+        "lifting equipment"
+      ],
+      "conditions": [
+        "between sites"
+      ],
+      "stageIds": [
+        "MOVE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E01d",
+      "sourceId": "E01",
+      "locator": "Printed p.16: To clean the product externally",
+      "paraphrase": "Immediate cleaning includes blade removal and brush/water cleaning of the blade block before residues harden.",
+      "actor": "Operator",
+      "task": "Clean machine",
+      "tools": [
+        "brush",
+        "water"
+      ],
+      "conditions": [
+        "after cutting"
+      ],
+      "stageIds": [
+        "FINISH"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E02a",
+      "sourceId": "E02",
+      "locator": "PDF pp.4–5: Louisiana study and Summary",
+      "paraphrase": "Setting conditions affect practice; a pavement study changed cut depth; guidance discusses surface support and skid condition.",
+      "actor": "Pavement contractor/operator",
+      "task": "Choose timing/process",
+      "tools": [
+        "early-entry saw",
+        "skid"
+      ],
+      "conditions": [
+        "fresh pavement; transfer limit to floors"
+      ],
+      "stageIds": [
+        "PLAN",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E03a",
+      "sourceId": "E03",
+      "locator": "PDF p.2: item c and rules 1–3",
+      "paraphrase": "Plan joint location and sawing timing before construction; early-entry timing depends on concrete setting characteristics.",
+      "actor": "Planner/contractor",
+      "task": "Plan jointing",
+      "tools": [
+        "drawings",
+        "appropriate saw"
+      ],
+      "conditions": [
+        "slab on grade"
+      ],
+      "stageIds": [
+        "PLAN",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E04a",
+      "sourceId": "E04",
+      "locator": "PDF p.2: Transport and storage; Change skid plate; Check blade block plungers",
+      "paraphrase": "Advises blade/skid checks, blade removal for transport and daily blade-block cleaning.",
+      "actor": "Operator",
+      "task": "Inspect, move and service equipment",
+      "tools": [
+        "blade",
+        "skid",
+        "blade block"
+      ],
+      "conditions": [
+        "early-entry work"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "MOVE",
+        "FINISH"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E05a",
+      "sourceId": "E05",
+      "locator": "SOFF CUTTING section",
+      "paraphrase": "Contractor offers fresh-concrete joint cutting and emphasizes timing and precision.",
+      "actor": "Cutting contractor",
+      "task": "Provide early-entry service",
+      "tools": [
+        "saw"
+      ],
+      "conditions": [
+        "fresh slab"
+      ],
+      "stageIds": [
+        "PLAN",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E06a",
+      "sourceId": "E06",
+      "locator": "How We Perform… steps 2–3; cleanup line; early-entry FAQ",
+      "paraphrase": "Describes cut-line marking, specified depth and cleanup; offers early-entry work with differing timing wording.",
+      "actor": "Contractor/operator",
+      "task": "Lay out cuts and prepare depth",
+      "tools": [
+        "diamond saw"
+      ],
+      "conditions": [
+        "mixed applications; exclude slurry workflow"
+      ],
+      "stageIds": [
+        "PLAN",
+        "PREPARE",
+        "FINISH"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E07a",
+      "sourceId": "E07",
+      "locator": "Where Dust Becomes a Problem; vacuum-selection FAQ",
+      "paraphrase": "Identifies dust around operators/equipment; system selection depends on airflow, hose length and site conditions.",
+      "actor": "Operator/site crew",
+      "task": "Configure dust capture",
+      "tools": [
+        "saw",
+        "hose",
+        "industrial extractor"
+      ],
+      "conditions": [
+        "dry early-entry work"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E08a",
+      "sourceId": "E08",
+      "locator": "PDF p.1: introduction and Wet Cutting",
+      "paraphrase": "Cutting silica-containing materials creates respirable dust; described control is continuous water delivery.",
+      "actor": "Employer/operator",
+      "task": "Manage exposure",
+      "tools": [
+        "wet walk-behind saw"
+      ],
+      "conditions": [
+        "US wet-saw construction; context only"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": false
+    },
+    {
+      "id": "E09a",
+      "sourceId": "E09",
+      "locator": "Printed pp.10–14: tool replacement, extractor connection and stopping",
+      "paraphrase": "Tool change involves tilting and tool plates; hose/filter checks precede extraction; stop guidance mentions adhesive/paint surfaces.",
+      "actor": "Floor-preparation operator",
+      "task": "Prepare and stop coating-removal equipment",
+      "tools": [
+        "PG 540",
+        "diamonds",
+        "extractor"
+      ],
+      "conditions": [
+        "coated floor; alternative candidate"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": true
+    },
+    {
+      "id": "E10a",
+      "sourceId": "E10",
+      "locator": "Printed pp.24,28–29: preparation, operation and transport",
+      "paraphrase": "Describes stump preparation, chip clearance, below-grade handling adjustment and two-person lifting when necessary.",
+      "actor": "Grounds worker",
+      "task": "Grind, clear and move",
+      "tools": [
+        "SG13",
+        "truck/trailer"
+      ],
+      "conditions": [
+        "outdoor stump; alternative candidate"
+      ],
+      "stageIds": [
+        "PREPARE",
+        "MOVE",
+        "OPERATE",
+        "FINISH"
+      ],
+      "reviewStatus": "reviewed",
+      "candidateOnly": true
+    }
+  ],
+  "stages": [
+    {
+      "id": "PLAN",
+      "order": 1,
+      "actors": [
+        "Contractor",
+        "finishing foreman",
+        "designer (assumed role split)"
+      ],
+      "tasks": [
+        "Obtain specified joint layout",
+        "Coordinate finishing handoff and site readiness"
+      ],
+      "dependencies": [
+        "Approved joint plan",
+        "site conditions"
+      ],
+      "equipment": [
+        "drawings",
+        "job plan"
+      ],
+      "gaps": [
+        "Crew coordination failures and waiting duration unobserved"
+      ],
+      "observationIds": [
+        "E01a",
+        "E02a",
+        "E03a",
+        "E05a",
+        "E06a"
+      ]
+    },
+    {
+      "id": "PREPARE",
+      "order": 2,
+      "actors": [
+        "Operator"
+      ],
+      "tasks": [
+        "Check specified tool system",
+        "Connect extraction",
+        "Verify marked layout and specified depth"
+      ],
+      "dependencies": [
+        "Job/site suitability",
+        "equipment availability"
+      ],
+      "equipment": [
+        "saw",
+        "blade",
+        "skid",
+        "extractor",
+        "hose",
+        "protective equipment"
+      ],
+      "gaps": [
+        "Actual setup time and adapter difficulty unknown",
+        "Model-specific exposure evidence needed"
+      ],
+      "observationIds": [
+        "E01b",
+        "E04a",
+        "E06a",
+        "E07a",
+        "E08a"
+      ]
+    },
+    {
+      "id": "MOVE",
+      "order": 3,
+      "actors": [
+        "Operator/handler"
+      ],
+      "tasks": [
+        "Transport saw",
+        "Position equipment",
+        "Recheck readiness after transport"
+      ],
+      "dependencies": [
+        "Vehicle/lifting access",
+        "secure restraint"
+      ],
+      "equipment": [
+        "vehicle",
+        "straps",
+        "lifting equipment"
+      ],
+      "gaps": [
+        "Extractor movement, trips, posture and route bottlenecks unknown"
+      ],
+      "observationIds": [
+        "E01c",
+        "E04a"
+      ]
+    },
+    {
+      "id": "OPERATE",
+      "order": 4,
+      "actors": [
+        "Operator",
+        "finishing foreman"
+      ],
+      "tasks": [
+        "Follow marked joints",
+        "Monitor readiness and cut quality",
+        "Use configured extraction system"
+      ],
+      "dependencies": [
+        "Finishing handoff",
+        "prepared equipment",
+        "specified layout"
+      ],
+      "equipment": [
+        "saw",
+        "skid",
+        "extractor"
+      ],
+      "gaps": [
+        "Error, wear, dust exposure and interruption rates unmeasured"
+      ],
+      "observationIds": [
+        "E01a",
+        "E01b",
+        "E02a",
+        "E03a",
+        "E05a",
+        "E07a",
+        "E08a"
+      ]
+    },
+    {
+      "id": "FINISH",
+      "order": 5,
+      "actors": [
+        "Operator",
+        "contractor"
+      ],
+      "tasks": [
+        "Clean/service equipment",
+        "Pack tools",
+        "Hand off completed cuts (assumed)"
+      ],
+      "dependencies": [
+        "Cut completion",
+        "cleaning access"
+      ],
+      "equipment": [
+        "brush",
+        "water",
+        "tool storage"
+      ],
+      "gaps": [
+        "Disposal, acceptance inspection, reporting format and storage routine require field evidence"
+      ],
+      "observationIds": [
+        "E01d",
+        "E04a",
+        "E06a"
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "P01",
+      "stageIds": [
+        "PLAN",
+        "OPERATE"
+      ],
+      "observationIds": [
+        "E01a",
+        "E02a",
+        "E03a",
+        "E05a",
+        "E06a"
+      ],
+      "interpretation": "Readiness decisions combine conditions and handoff; a fixed elapsed-time instruction may mislead.",
+      "confidence": "medium",
+      "unknowns": [
+        "How often operators struggle or wait is unknown"
+      ],
+      "prevalence": "unknown"
+    },
+    {
+      "id": "P02",
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "observationIds": [
+        "E01b",
+        "E02a",
+        "E04a"
+      ],
+      "interpretation": "Cut quality depends on correct setup and consumable condition.",
+      "confidence": "medium",
+      "unknowns": [
+        "Error prevalence and unmet demand for redesign unknown"
+      ],
+      "prevalence": "unknown"
+    },
+    {
+      "id": "P03",
+      "stageIds": [
+        "PREPARE",
+        "OPERATE"
+      ],
+      "observationIds": [
+        "E01b",
+        "E07a"
+      ],
+      "interpretation": "Extraction fit and condition need attention alongside the saw.",
+      "confidence": "medium",
+      "unknowns": [
+        "No exposure data, actual setup burden or compliance conclusion"
+      ],
+      "prevalence": "unknown"
+    },
+    {
+      "id": "P04",
+      "stageIds": [
+        "MOVE"
+      ],
+      "observationIds": [
+        "E01c",
+        "E04a"
+      ],
+      "interpretation": "Handling and reassembly add work beyond cutting; burden remains a hypothesis.",
+      "confidence": "low",
+      "unknowns": [
+        "Actual trips, delays and physical effort unknown"
+      ],
+      "prevalence": "unknown"
+    },
+    {
+      "id": "P05",
+      "stageIds": [
+        "FINISH"
+      ],
+      "observationIds": [
+        "E01d",
+        "E04a"
+      ],
+      "interpretation": "Prompt cleaning creates another time-sensitive task; maintainability may matter.",
+      "confidence": "low",
+      "unknowns": [
+        "Cleaning duration and access difficulty unknown"
+      ],
+      "prevalence": "unknown"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "O01",
+      "rank": 1,
+      "title": "Readiness and handoff support",
+      "painPointIds": [
+        "P01"
+      ],
+      "hypothesis": "Contextual job card for specifications, handoff, conditions and operator observations.",
+      "status": "untested hypothesis",
+      "responseType": "service/process",
+      "scores": {
+        "impact": 3,
+        "evidence": 3,
+        "feasibility": 3,
+        "relevance": 2
+      },
+      "validation": "Interview two operators and a foreman about the last job; test the card on one supervised pour; record missing inputs, overrides and decision agreement. No predicted safe start time."
+    },
+    {
+      "id": "O02",
+      "rank": 2,
+      "title": "Consumable-condition and setup support",
+      "painPointIds": [
+        "P02"
+      ],
+      "hypothesis": "Improve blade/skid inspection cues and evaluate a maintainable interface.",
+      "status": "untested hypothesis",
+      "responseType": "product",
+      "scores": {
+        "impact": 3,
+        "evidence": 2,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "validation": "Observe qualified operators using current checks and a mockup; record omissions/usability; controlled approved cuts can compare edge condition."
+    },
+    {
+      "id": "O03",
+      "rank": 3,
+      "title": "Extraction compatibility and condition support",
+      "painPointIds": [
+        "P03"
+      ],
+      "hypothesis": "Fit/condition checklist, then investigate coupling or airflow indication.",
+      "status": "untested hypothesis",
+      "responseType": "product/system",
+      "scores": {
+        "impact": 3,
+        "evidence": 2,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "validation": "With a competent safety specialist inspect two setups, document fit/hose/filter issues, and compare proposed indications with instrumented measurements."
+    },
+    {
+      "id": "O05",
+      "rank": 4,
+      "title": "Cleaning and next-job readiness",
+      "painPointIds": [
+        "P05"
+      ],
+      "hypothesis": "Evaluate easier blade-block access and a service completion cue.",
+      "status": "untested hypothesis",
+      "responseType": "product/process",
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "validation": "Observe cleaning on two jobs with consent; record tasks/residue/access; test a nonfunctional access mockup."
+    },
+    {
+      "id": "O04",
+      "rank": 5,
+      "title": "Transport kit and reassembly support",
+      "painPointIds": [
+        "P04"
+      ],
+      "hypothesis": "Protected blade/skid storage and kit-readiness checklist.",
+      "status": "untested hypothesis",
+      "responseType": "product/process",
+      "scores": {
+        "impact": 2,
+        "evidence": 1,
+        "feasibility": 2,
+        "relevance": 3
+      },
+      "validation": "Observe one depot-to-site transfer, count handling steps, ask about access and compare packaging mockup."
+    }
+  ]
+}
