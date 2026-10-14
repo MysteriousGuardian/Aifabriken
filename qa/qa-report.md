@@ -280,3 +280,27 @@ Person 1's research-decision-update.md includes a three-minute script. In baseli
 No approved team messaging channel is available; no Person 2 message sent. One forwardable request supplied in chat: confirm apprepo URL, synced branch, review commit, preview, approved data changes and ready-for-QA paused-edit window. No test-file ownership/path agreement exists; no app test file, branch or PR created. No production/research/UI changes, Lovable build/deploy/project/connection action performed.
 
 **Recommendation:** approved import is BLOCKED by QA-06 until fixed and independently retested. Final demo readiness is not certified: frozen deployed-version match and live rehearsal are missing. Baseline remains a possible demo path with stated limitations, not a new acceptance PASS. At 12:44 Stockholm there were about 3h16 to deadline; prioritize candidate search, import eligibility and evidence/demo chain above cosmetics. Proposed freeze remains 15:15; no routine/reminder scheduled.
+
+
+## Codex local retest — 2026-10-14 12:52–12:55 Stockholm
+
+Local pinned snapshot: 8008474 (full SHA recorded by local git), fetched from origin/main. Changes since d97f7c1 affect only src/routes/index.tsx: candidate exclusion, selected-panel reset and focus targeting. No app changes by QA.
+
+- npm test: PASS 2 files / 10 tests, 12:52:40. Prior dependency-install caveat applies.
+- QA-05 CLOSED for this local version: search SG13 shows no results. Code excludes candidateOnly before building search hits. Dedicated candidate section remains.
+- Search handoff: P01/O01 visible. Clicking P01 focuses the observed-evidence DIV; clicking O01 focuses element id O01. Verified in rendered DOM.
+- QA-06 remains open before merged import: research.ts and support-eligibility behavior are unchanged. Separate draft continues to protect the present baseline.
+- QA-01/02/03 remain open: source changes do not add counters, disclosure detail or close controls.
+- Viewport override 1366×768: DOM dimensions match and document scrollWidth 1366; scale 1 reported. Screenshot inspected.
+- Viewport override 1280×800: DOM dimensions match, document scrollWidth 1280, Reset right edge 1256. Screenshot inspected.
+- 390×844: document scrollWidth 390, no document-wide horizontal overflow. PREPARE and OPERATE button scrollWidth 71 > clientWidth 63; text exceeds allocated button width. Treat as narrow-screen P2 follow-up, not proof that laptop layout fails.
+- Viewport override reset after test. Browser 125% zoom and every focusable control remain NOT TESTED. scale 1 is not independent proof of browser zoom percentage.
+- Local screenshot timing/rendering may differ from deployed preview; no claim of deployed equivalence or freeze.
+
+### Demo script compatibility review
+
+Reviewed Person 1's three-minute script in research/research-decision-update.md. The script already offers an external research/PDF fallback when import is unavailable. Retain baseline five-opportunity scores in the app; do not narrate four active items or 9/9/9/8 as implemented.
+
+At 1:00–1:40 E01e exists in the separate draft, not a reviewed OPERATE observation. Say that manual troubleshooting exists and use the actual manual locator if showing the source. At 2:10–2:40 the draft O06 display has no complete validation experiment or alternatives UI. Use Person 1's research handoff for that explanation, or choose baseline O01 and its visible validation experiment for an entirely in-app demo. Existing support is not proof of usability, unmet demand or unique diagnosis.
+
+Live spoken three-minute rehearsal is still NOT TESTED; this is a compatibility review and local click/focus retest. Person 1 owns manuscript changes; QA has not edited research files. Prioritize remaining P1 import gate, then P2 counters/disclosure/close controls; preserve working search and baseline.
