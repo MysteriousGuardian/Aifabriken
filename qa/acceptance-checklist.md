@@ -28,14 +28,28 @@ Körs i Strawberry Browser mot Lovable-preview-URL:en efter varje byggsteg. Utg�
 | 18 | Viewport 1366×768 och 1280×800, zoom 100 % och 125 %. | Ingen horisontell scroll. Text och kontrast är läsbara, även på grått och färgat. Panelen täcker inte navigeringen så att den blir oåtkomlig. | ☐ |
 | 19 | Klicka ”Open source” för E01–E10. | Rätt URL öppnas. E07 och E08 kan blockeras av webbplatsen (403 mot skript). Om sidan blockeras: kategori **extern**, inte appfel, så länge URL:en är exakt den i datan. | ☐ |
 
-## Endast om importförslaget har integrerats
+## Importläge: baseline, separat draft eller godkänd integration
+
+Dokumentera faktisk dataversion och godkännandebeslut före test. En synlig draft-sektion är inte en godkänd import. Före godkännande gäller fem baseline-möjligheter och poängen i #7. Ändra poäng och rubricering tillsammans först efter dokumenterat beslut.
 
 | # | Steg | Förväntat resultat | OK |
 |---|---|---|---|
-| 20 | Öppna möjlighetsjämförelsen. | Fyra aktiva: O01, O03, O06 och O05 (summorna 9, 9, 9, 8). O02 är märkt ”superseded by O06” och O04 ”backlog”. Inga av dem ligger i den aktiva rangordningen. | ☐ |
-| 21 | Titta på hur rang 1–3 förklaras. | Det framgår att lika summa bryts redaktionellt (O01, O03, O06). | ☐ |
-| 22 | Öppna O06 → P06. | E01e, E01f, E18a och E19a är märkta draft eller ej granskade. De räknas inte som granskad evidens och höjer inga räknare för granskat stöd. | ☐ |
+| 20 | Efter dokumenterat godkännande och komplett review-eligibility för O06/P06/stöd: öppna möjlighetsjämförelsen. Före detta: kontrollera fem baseline-poster och O06 utanför granskad ranking. | Efter komplett godkänd integration: fyra aktiva: O01, O03, O06 och O05 (summorna 9, 9, 9, 8). O02 är märkt ”superseded by O06” och O04 ”backlog”. Inga av dem ligger i den aktiva rangordningen. | ☐ |
+| 21 | Endast efter godkänd integration: titta på hur rang 1–3 förklaras. | Det framgår att lika summa bryts redaktionellt (O01, O03, O06). | ☐ |
+| 22 | Öppna O06 → P06 och kontrollera faktisk granskningsstatus. | Före godkännande är O06 inaktiv, utan rang, endast kopplad till P06 och utanför granskad ranking; draft-stöd höjer inga granskade räknare. Efter godkännande måste O06, P06 och hela stödkedjan vara behöriga enligt reviewGate. En granskad alternativ väg räcker inte. | ☐ |
 | 23 | OPERATE och PREPARE. | De nya observationerna syns under rätt steg, eller är tydligt draft-märkta. Stegen och observationerna pekar på varandra. | ☐ |
+
+## Fokuserade regressioner för appbyggaren
+
+Dessa är testfall, inte påståenden om körda apptester. Kör mot implementationen när repo och testägarskap är fastställda.
+
+- En inaktiv post med högre summa än alla aktiva exkluderas före sortering.
+- En draft-post exkluderas även med hög summa och rank 1.
+- O06 kan inte bli granskad via P02 eller en enda godkänd observation när annat obligatoriskt stöd är draft.
+- Känd baseline utan nya statusfält behåller ordningen O01/O02/O03/O05/O04 och summorna 11/10/10/8/8. Importerade poster kräver explicit review.
+- Lika summor bryts med avsedd aktiv rang; poäng och rubricering uppdateras tillsammans.
+- Godkända nya observationer har stegkoppling åt båda håll. Draft hålls separat.
+- Datum 2007 och 2017-12 behåller precision; null visas som okänt. P04/P05 räknar en familj.
 
 ## Felrapportmall
 
